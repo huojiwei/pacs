@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .txt10{width: 10px;}
+    .txt20{width: 20px;}
+    .txt30{width: 30px;}
+    .txt40{width: 40px;}
+    .txt50{width: 50px;}
+    .txt60{width: 60px;}
+    .txt70{width: 70px;}
+    .txt80{width: 80px;}
+    .txt90{width: 90px;}
+    .txt100{width: 100px;}
+    .txt110{width: 110px;}
+    .txt120{width: 120px;}
+    .txt130{width: 130px;}
+    .w96{
+        width: 96%;
+    }
+    p{
+      margin: 0;
+    }
+    input{
+      padding: 0;
+      border: 0;
+      text-align: center;
+    }
+    .mar4 td{
+        text-align: center;
+    }
+    .mar4{
+      border-right: 1px solid #000;
+      border-bottom: 1px solid #000;
+    }
+    .mar4 td{
+      border-top: 1px solid #000;
+      border-left: 1px solid #000;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="width:940px;  background-color:#fff;">
+    <div class="box2">${BZZYJGMC}</div>
+    <div class="box1">血糖检测记录单</div>
+    <table width="940" border="0" cellspacing="0" cellpadding="0" class="jshl01">
+      <tr>
+        <td>
+        姓名:
+        <input type="text" name="patnam" id="patnam" class="txt100" style="text-align: center;"/>
+        性别:
+        <input type="text" name="sex" id="sex" class="txt30" style="text-align: center;"/>
+       科室:
+          <input type="text" name="deptname" id="deptname" class="txt100" style=" text-align: center;" />
+          床号:
+          <input type="text" name="cbedno" id="cbedno" class="txt50" style="text-align: center;" />
+         住院病历号:
+          <input type="text" name="medrcdno" id="medrcdno" class="txt110" style="text-align: center;"/>
+          入院日期:
+          <input type="text" name="admiss_date" id="admiss_date" class="txt130" style="text-align: center;"/>
+
+         </td>
+      </tr>
+    </table>
+    <div  style="width:940px;  overflow: hidden;">
+    <table width="940"  cellspacing="0" cellpadding="0" class="jshl02 mar4 jshl05">
+      <tr>
+        <td rowspan="3" >日期</td>
+        <td colspan="16">血糖监测结果mmol/L</td>
+      </tr>
+      <tr>
+          <td colspan="2">早餐</td>
+          <td colspan="2">中餐</td>
+          <td colspan="2">早餐</td>
+          <td colspan="10">随机血糖</td>
+      </tr>
+      <tr>
+        <td><p>餐前</p></td>
+        <td><p>餐后2h</p></td>
+        <td><p>餐前</p></td>
+        <td><p>餐后2h</p></td>
+        <td><p>餐前</p></td>
+        <td><p>餐后2h</p></td>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+      <#list 1..16 as x>
+        <tr>
+          <td><input type="text" name="rq${x}" id="rq${x}" class="txt40 jshl05" /></td>
+          <td><input type="text" name="sj${x}" id="sj${x}" class="txt40 jshl05" /></td>
+          <td><input type="text" name="name01${x}" id="name01${x}" class="w96"></td>
+          <td><input type="text" name="name02${x}" id="name02${x}" class="w96"></td>
+          <td><input type="text" name="name03${x}" id="name03${x}" class="w96"></td>
+          <td><input type="text" name="name04${x}" id="name04${x}" class="w96"></td>
+          <td><input type="text" name="name05${x}" id="name05${x}" class="w96"></td>
+          <td><input type="text" name="name06${x}" id="name06${x}" class="w96"></td>
+          <td><input type="text" name="name07${x}" id="name07${x}" class="w96"></td>
+          <td><input type="text" name="name08${x}" id="name08${x}" class="w96"></td>
+          <td><input type="text" name="name09${x}" id="name09${x}" class="w96"></td>
+          <td><input type="text" name="name10${x}" id="name10${x}" class="w96"></td>
+          <td><input type="text" name="name11${x}" id="name11${x}" class="w96"></td>
+          <td><input type="text" name="name12${x}" id="name12${x}" class="w96"></td>
+          <td><input type="text" name="name13${x}" id="name13${x}" class="w96"></td>
+          <td><input type="text" name="name14${x}" id="name14${x}" class="w96"></td>
+          <td><input type="text" name="name15${x}" id="name15${x}" class="w96"></td>
+        </tr>
+      </#list>
+    </table>
+  </div>
+  </div>
+  <script type="text/javascript">
+    $(function () {
+    <@x_inputtext field="deptname" defaultValue="patient.deptname" />	
+    <@x_inputtext field="cbedno" defaultValue="patient.cbedno" />
+    <@x_inputtext field="patnam" defaultValue="patient.patname" />
+    <@x_inputtext field="medrcdno" defaultValue="patient.medrcdno" />
+    <@x_inputtext field="diagname" defaultValue="patient.diagname" />
+    <@x_inputtext field="sex" defaultValue="patient.sex" />
+    <@x_inputtext field="admiss_date" defaultValue="patient.admiss_date" />
+    <#list 1..16 as x >
+    <@x_inputtext field="rq${x}" rule="MM-dd" />
+    <@x_inputtext field="sj${x}" />
+    <@x_inputtext field="name01${x}"  />
+    <@x_inputtext field="name02${x}"  />
+    <@x_inputtext field="name03${x}"  />
+    <@x_inputtext field="name04${x}"  />
+    <@x_inputtext field="name05${x}"  />
+    <@x_inputtext field="name06${x}"  />
+    <@x_inputtext field="name07${x}"  />
+    <@x_inputtext field="name08${x}"  />
+    <@x_inputtext field="name09${x}"  />
+    <@x_inputtext field="name10${x}"  />
+    <@x_inputtext field="name11${x}"  />
+    <@x_inputtext field="name12${x}"  />
+    <@x_inputtext field="name13${x}"  />
+    <@x_inputtext field="name14${x}"  />
+    <@x_inputtext field="name15${x}"  />
+    <@x_inputtext field="name16${x}"  />
+    <@x_inputtext field="name17${x}"  />
+    <@x_inputtext field="name18${x}"  />
+    <@x_inputtext field="name19${x}"  />
+        </#list>
+  
+    })
+  </script>
+
+</body>
+
+</html>

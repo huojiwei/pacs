@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box2">${BZZYJGMC}高危压疮病人记录表</div>
+    <!-- <div class="box1"></div> -->
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="jshl01">
+        <tr>
+            <td>
+                床号<input type="text" name="cbedno" id="cbedno" style="width: 100px;"/>
+            </td>
+            <td>
+                姓名
+                <input type="text" name="patnam" id="patnam" style="width: 100px;"/>
+            </td>
+            <td>
+                性别
+                <input type="text" name="sex" id="sex" style="width: 50px;">
+            </td>
+            <td>
+                年龄
+                <input type="text" name="calculateage" id="calculateage" style="width: 70px;">
+            </td>
+            <td>
+                住院号
+                <input type="text" name="inpno" id="inpno" class="txt11" style="width: 100px;"/>
+            </td>
+            <td>
+                入院诊断：
+                <input type="text" name="diagname" id="diagname" class="txt11" style="width:220px"/>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="5" >
+                高危压疮病人请每天对压疮危险因素评分，记录皮肤情况，并采取有效的措施。
+            </td>
+            <td>
+                评估时间：
+                <input type="text" name="year" id="year"  style="width: 50px;">年
+                <input type="text" name="mounth" id="mounth" style="width: 50px;">月 
+                <input type="text" name="day" id="day" style="width: 50px;"> 日
+            </td>
+          </tr>
+      </table>
+      <table width="100%" height="350px"  border="1" cellspacing="1" cellpadding="0" class="jshl02 mar4 jshl05" >
+          <tr>
+              <td   rowspan="2">项目分值</td>
+              <td colspan="4" style="text-align: center;">危险因素</td>
+              <td colspan="10"  style="text-align: center;">日期</td>
+          </tr>
+          <tr>
+            <td   style="text-align: center;">4</td>
+            <td  style="text-align: center;">3</td>
+            <td  style="text-align: center;">2</td>
+            <td  style="text-align: center;">1</td>
+            <td width="48px"><input type="text" id="riqi01" name="riqi01" style="width:97%;"></td>
+            <td width="48px"><input type="text" id="riqi02" name="riqi02" style="width:97%;"></td>
+            <td width="48px"><input type="text" id="riqi03" name="riqi03" style="width:97%;"></td>
+            <td width="48px"><input type="text" id="riqi04" name="riqi04" style="width:97%;"></td>
+            <td width="48px"><input type="text" id="riqi05" name="riqi05" style="width:97%;"></td>
+            <td width="48px"><input type="text" id="riqi06" name="riqi06" style="width:97%;"></td>
+            <td width="48px"><input type="text" id="riqi07" name="riqi07" style="width:97%;"></td>
+            <td width="48px"><input type="text" id="riqi08" name="riqi08" style="width:97%;"></td>
+            <td width="48px"><input type="text" id="riqi09" name="riqi09" style="width:97%;"></td>
+            <td width="48px"><input type="text" id="riqi10" name="riqi10" style="width:97%;"></td>
+          </tr>
+          <tr>
+              <td>感觉</td>
+              <td>没有改变</td>
+              <td>轻度障碍</td>
+              <td>重度障碍</td>
+              <td>完全丧失</td>
+            <td ><input type="text" id="txt01" name="txt01" style="width:97%;"></td>
+            <td ><input type="text" id="txt02" name="txt02" style="width:97%;"></td>
+            <td ><input type="text" id="txt03" name="txt03" style="width:97%;"></td>
+            <td ><input type="text" id="txt04" name="txt04" style="width:97%;"></td>
+            <td ><input type="text" id="txt05" name="txt05" style="width:97%;"></td>
+            <td ><input type="text" id="txt06" name="txt06" style="width:97%;"></td>
+            <td ><input type="text" id="txt07" name="txt07" style="width:97%;"></td>
+            <td ><input type="text" id="txt08" name="txt08" style="width:97%;"></td>
+            <td ><input type="text" id="txt09" name="txt09" style="width:97%;"></td>
+            <td ><input type="text" id="txt10" name="txt10" style="width:97%;"></td>
+          </tr>
+          <tr>
+            <td>潮湿</td>
+            <td>很少浸湿</td>
+            <td>偶尔浸湿</td>
+            <td>潮湿</td>
+            <td>一直浸湿</td>
+            <td ><input type="text" id="txt11" name="txt11" style="width:97%;"></td>
+            <td ><input type="text" id="txt12" name="txt12" style="width:97%;"></td>
+            <td ><input type="text" id="txt13" name="txt13" style="width:97%;"></td>
+            <td ><input type="text" id="txt14" name="txt14" style="width:97%;"></td>
+            <td ><input type="text" id="txt15" name="txt15" style="width:97%;"></td>
+            <td ><input type="text" id="txt16" name="txt16" style="width:97%;"></td>
+            <td ><input type="text" id="txt17" name="txt17" style="width:97%;"></td>
+            <td ><input type="text" id="txt18" name="txt18" style="width:97%;"></td>
+            <td ><input type="text" id="txt19" name="txt19" style="width:97%;"></td>
+            <td ><input type="text" id="txt20" name="txt20" style="width:97%;"></td>
+        </tr>
+        <tr>
+            <td>活动方式</td>
+            <td>经常行走</td>
+            <td>偶尔行走</td>
+            <td>轮椅</td>
+            <td>卧床不起</td>
+            
+            <td ><input type="text" id="txt21" name="txt21" style="width:97%;"></td>
+            <td ><input type="text" id="txt22" name="txt22" style="width:97%;"></td>
+            <td ><input type="text" id="txt23" name="txt23" style="width:97%;"></td>
+            <td ><input type="text" id="txt24" name="txt24" style="width:97%;"></td>
+            <td ><input type="text" id="txt25" name="txt25" style="width:97%;"></td>
+            <td ><input type="text" id="txt26" name="txt26" style="width:97%;"></td>
+            <td ><input type="text" id="txt27" name="txt27" style="width:97%;"></td>
+            <td ><input type="text" id="txt28" name="txt28" style="width:97%;"></td>
+            <td ><input type="text" id="txt29" name="txt29" style="width:97%;"></td>
+            <td ><input type="text" id="txt30" name="txt30" style="width:97%;"></td>
+        </tr>
+        <tr>
+            <td>活动能力</td>
+            <td>没有改变</td>
+            <td>轻度受限</td>
+            <td>重度受限</td>
+            <td>完全不能移动</td>
+            <td ><input type="text" id="txt31" name="txt31" style="width:97%;"></td>
+            <td ><input type="text" id="txt32" name="txt32" style="width:97%;"></td>
+            <td ><input type="text" id="txt33" name="txt33" style="width:97%;"></td>
+            <td ><input type="text" id="txt34" name="txt34" style="width:97%;"></td>
+            <td ><input type="text" id="txt35" name="txt35" style="width:97%;"></td>
+            <td ><input type="text" id="txt36" name="txt36" style="width:97%;"></td>
+            <td ><input type="text" id="txt37" name="txt37" style="width:97%;"></td>
+            <td ><input type="text" id="txt38" name="txt38" style="width:97%;"></td>
+            <td ><input type="text" id="txt39" name="txt39" style="width:97%;"></td>
+            <td ><input type="text" id="txt40" name="txt40" style="width:97%;"></td>
+        </tr>
+        <tr>
+            <td>营养</td>
+            <td>营养摄入极佳</td>
+            <td>充足</td>
+            <td>可能不足</td>
+            <td>非常差</td>
+            <td ><input type="text" id="txt41" name="txt41"  style="width:97%;"></td>
+            <td ><input type="text" id="txt42" name="txt42"  style="width:97%;"></td>
+            <td ><input type="text" id="txt43" name="txt43"  style="width:97%;"></td>
+            <td ><input type="text" id="txt44" name="txt44"  style="width:97%;"></td>
+            <td ><input type="text" id="txt45" name="txt45"  style="width:97%;"></td>
+            <td ><input type="text" id="txt46" name="txt46"  style="width:97%;"></td>
+            <td ><input type="text" id="txt47" name="txt47"  style="width:97%;"></td>
+            <td ><input type="text" id="txt48" name="txt48"  style="width:97%;"></td>
+            <td ><input type="text" id="txt49" name="txt49"  style="width:97%;"></td>
+            <td ><input type="text" id="txt50" name="txt50"  style="width:97%;"></td>
+        </tr>
+        <tr>
+            <td>摩擦/剪切力</td>
+            <td></td>
+            <td>没有明显问题</td>
+            <td>潜在问题</td>
+            <td>已存在问题</td>
+            <td ><input type="text" id="txt51" name="txt51"  style="width:97%;"></td>
+            <td ><input type="text" id="txt52" name="txt52"  style="width:97%;"></td>
+            <td ><input type="text" id="txt53" name="txt53"  style="width:97%;"></td>
+            <td ><input type="text" id="txt54" name="txt54"  style="width:97%;"></td>
+            <td ><input type="text" id="txt55" name="txt55"  style="width:97%;"></td>
+            <td ><input type="text" id="txt56" name="txt56"  style="width:97%;"></td>
+            <td ><input type="text" id="txt57" name="txt57"  style="width:97%;"></td>
+            <td ><input type="text" id="txt58" name="txt58"  style="width:97%;"></td>
+            <td ><input type="text" id="txt59" name="txt59"  style="width:97%;"></td>
+            <td ><input type="text" id="txt60" name="txt60"  style="width:97%;"></td>
+        </tr>
+        <tr>
+            <td>总分</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td ><input type="text" id="txt61" name="txt61"  style="width:97%;"></td>
+            <td ><input type="text" id="txt62" name="txt62"  style="width:97%;"></td>
+            <td ><input type="text" id="txt63" name="txt63"  style="width:97%;"></td>
+            <td ><input type="text" id="txt64" name="txt64"  style="width:97%;"></td>
+            <td ><input type="text" id="txt65" name="txt65"  style="width:97%;"></td>
+            <td ><input type="text" id="txt66" name="txt66"  style="width:97%;"></td>
+            <td ><input type="text" id="txt67" name="txt67"  style="width:97%;"></td>
+            <td ><input type="text" id="txt68" name="txt68"  style="width:97%;"></td>
+            <td ><input type="text" id="txt69" name="txt69"  style="width:97%;"></td>
+            <td ><input type="text" id="txt70" name="txt70"  style="width:97%;"></td>
+        </tr>
+        <tr>
+            <td >皮肤情况</td>
+            <td ></td>
+            <td ></td>
+            <td ></td>
+            <td ></td>
+            <td  ><div type="text" id="txt71" name="txt71" style="width:97%; height: 125px; overflow: hidden;"  /></td>
+            <td  ><div type="text" id="txt72" name="txt72" style="width:97%; height: 125px; overflow: hidden;"  /></td>
+            <td  ><div type="text" id="txt73" name="txt73" style="width:97%; height: 125px; overflow: hidden;"  /></td>
+            <td  ><div type="text" id="txt74" name="txt74" style="width:97%; height: 125px; overflow: hidden;"  /></td>
+            <td  ><div type="text" id="txt75" name="txt75" style="width:97%; height: 125px; overflow: hidden;"  /></td>
+            <td  ><div type="text" id="txt76" name="txt76" style="width:97%; height: 125px; overflow: hidden;"  /></td>
+            <td  ><div type="text" id="txt77" name="txt77" style="width:97%; height: 125px; overflow: hidden;"  /></td>
+            <td  ><div type="text" id="txt78" name="txt78" style="width:97%; height: 125px; overflow: hidden;"  /></td>
+            <td  ><div type="text" id="txt79" name="txt79" style="width:97%; height: 125px; overflow: hidden;"  /></td>
+            <td  ><div type="text" id="txt80" name="txt80" style="width:97%; height: 125px; overflow: hidden;"  /></td>
+        </tr>
+        <tr>
+            <td>签名</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td ><input type="text" id="txt81" name="txt81"  style="width:97%;"></td>
+            <td ><input type="text" id="txt82" name="txt82"  style="width:97%;"></td>
+            <td ><input type="text" id="txt83" name="txt83"  style="width:97%;"></td>
+            <td ><input type="text" id="txt84" name="txt84"  style="width:97%;"></td>
+            <td ><input type="text" id="txt85" name="txt85"  style="width:97%;"></td>
+            <td ><input type="text" id="txt86" name="txt86"  style="width:97%;"></td>
+            <td ><input type="text" id="txt87" name="txt87"  style="width:97%;"></td>
+            <td ><input type="text" id="txt88" name="txt88"  style="width:97%;"></td>
+            <td ><input type="text" id="txt89" name="txt89"  style="width:97%;"></td>
+            <td ><input type="text" id="txt90" name="txt90"  style="width:97%;"></td>
+        </tr>
+       
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" style="line-height:18px;">
+        <tr>
+          <td>目前制定措施：</td>
+        </tr>
+        <tr>
+          <td>
+              <input type="checkbox" name="chk01" value="1"> 1、正确使用预防压疮的工具： 
+              <input type="checkbox" name="chk02" value="10">气垫床 
+              <input type="checkbox" name="chk02" value="11">压疮贴
+              <input type="checkbox" name="chk02" value="12">其它：
+              <input type="text" name="other1" id="other1">
+          </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="chk01" value="2"> 2、翻身Q2H，避免局部受压。
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="chk01" value="3"> 3、保持皮肤清洁与干燥。
+                <input type="checkbox" name="chk01" value="4">4、注意全身营养。
+                <input type="checkbox" name="chk01" value="5">5、严格交接班制度，每天进行皮肤评估，必要时做好记录。
+                <input type="checkbox" name="chk01" value="6">6、其它：
+                <input type="text"  name="other2" id="other2" style="width: 110px;">
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript">
+
+setTimeout(function(){
+var myDate = new Date();
+var year = myDate.getFullYear(); 
+var month = myDate.getMonth()+1; 
+var day = myDate.getDate();
+    document.getElementById('year').value = year;
+    document.getElementById('mounth').value = month;
+    document.getElementById('day').value = day;
+
+},2000)
+setInterval(function(){
+    
+    var txt61 = Number(document.getElementById('txt01').value)+
+                Number(document.getElementById('txt11').value)+
+                Number(document.getElementById('txt21').value)+
+                Number(document.getElementById('txt31').value)+
+                Number(document.getElementById('txt41').value)+
+                Number(document.getElementById('txt51').value);
+    var txt62 = Number(document.getElementById('txt02').value)+
+                Number(document.getElementById('txt12').value)+
+                Number(document.getElementById('txt22').value)+
+                Number(document.getElementById('txt32').value)+
+                Number(document.getElementById('txt42').value)+
+                Number(document.getElementById('txt52').value);
+    var txt63 = Number(document.getElementById('txt03').value)+
+                Number(document.getElementById('txt13').value)+
+                Number(document.getElementById('txt23').value)+
+                Number(document.getElementById('txt33').value)+
+                Number(document.getElementById('txt43').value)+
+                Number(document.getElementById('txt53').value);
+    var txt64 = Number(document.getElementById('txt04').value)+
+                Number(document.getElementById('txt14').value)+
+                Number(document.getElementById('txt24').value)+
+                Number(document.getElementById('txt34').value)+
+                Number(document.getElementById('txt44').value)+
+                Number(document.getElementById('txt54').value);
+    var txt65 = Number(document.getElementById('txt05').value)+
+                Number(document.getElementById('txt15').value)+
+                Number(document.getElementById('txt25').value)+
+                Number(document.getElementById('txt35').value)+
+                Number(document.getElementById('txt45').value)+
+                Number(document.getElementById('txt55').value);
+    var txt66 = Number(document.getElementById('txt06').value)+
+                Number(document.getElementById('txt16').value)+
+                Number(document.getElementById('txt26').value)+
+                Number(document.getElementById('txt36').value)+
+                Number(document.getElementById('txt46').value)+
+                Number(document.getElementById('txt56').value);
+    var txt67 = Number(document.getElementById('txt07').value)+
+                Number(document.getElementById('txt17').value)+
+                Number(document.getElementById('txt27').value)+
+                Number(document.getElementById('txt37').value)+
+                Number(document.getElementById('txt47').value)+
+                Number(document.getElementById('txt57').value);
+    var txt68 = Number(document.getElementById('txt08').value)+
+                Number(document.getElementById('txt18').value)+
+                Number(document.getElementById('txt28').value)+
+                Number(document.getElementById('txt38').value)+
+                Number(document.getElementById('txt48').value)+
+                Number(document.getElementById('txt58').value);
+    var txt69 = Number(document.getElementById('txt09').value)+
+                Number(document.getElementById('txt19').value)+
+                Number(document.getElementById('txt29').value)+
+                Number(document.getElementById('txt39').value)+
+                Number(document.getElementById('txt49').value)+
+                Number(document.getElementById('txt59').value);
+    var txt70 = Number(document.getElementById('txt10').value)+
+                Number(document.getElementById('txt20').value)+
+                Number(document.getElementById('txt30').value)+
+                Number(document.getElementById('txt40').value)+
+                Number(document.getElementById('txt50').value)+
+                Number(document.getElementById('txt60').value);
+    document.getElementById('txt61').value = txt61;
+    document.getElementById('txt62').value = txt62;
+    document.getElementById('txt63').value = txt63;
+    document.getElementById('txt64').value = txt64;
+    document.getElementById('txt65').value = txt65;
+    document.getElementById('txt66').value = txt66;
+    document.getElementById('txt67').value = txt67;
+    document.getElementById('txt68').value = txt68;
+    document.getElementById('txt69').value = txt69;
+    document.getElementById('txt70').value = txt70;
+    
+
+}, 1000);
+<@x_inputtext field="patnam" defaultValue="patient.patname"/>	
+<@x_inputtext field="cbedno" defaultValue="patient.cbedno"/>
+<@x_inputtext field="sex" defaultValue="patient.sex"/>
+<@x_inputtext field="calculateage" defaultValue="patient.calculateage"/>
+<@x_inputtext field="inpno" defaultValue="patient.inpno"/>
+<@x_inputtext field="diagname" defaultValue="patient.diagname"/>
+<@x_inputtext field="year" rule="yyyy" />
+<@x_inputtext field="mounth" rule="MM"/>
+<@x_inputtext field="day" rule="dd" />
+<@x_inputtext field="riqi01" rule="MM-dd" />
+<@x_inputtext field="riqi02" rule="MM-dd"  />
+<@x_inputtext field="riqi03" rule="MM-dd"  />
+<@x_inputtext field="riqi04" rule="MM-dd" />
+<@x_inputtext field="riqi05" rule="MM-dd" />
+<@x_inputtext field="riqi06" rule="MM-dd" />
+<@x_inputtext field="riqi07" rule="MM-dd" />
+<@x_inputtext field="riqi08" rule="MM-dd" />
+<@x_inputtext field="riqi09" rule="MM-dd" />
+<@x_inputtext field="riqi10" rule="MM-dd" />
+<@x_combo field="txt01" rule="1,2,3,4" />
+<@x_combo field="txt02" rule="1,2,3,4" />
+<@x_combo field="txt03" rule="1,2,3,4" />
+<@x_combo field="txt04" rule="1,2,3,4" />
+<@x_combo field="txt05" rule="1,2,3,4" />
+<@x_combo field="txt06" rule="1,2,3,4" />
+<@x_combo field="txt07" rule="1,2,3,4" />
+<@x_combo field="txt08" rule="1,2,3,4" />
+<@x_combo field="txt09" rule="1,2,3,4" />
+<@x_combo field="txt10" rule="1,2,3,4" />
+<@x_combo field="txt11" rule="1,2,3,4" />
+<@x_combo field="txt12" rule="1,2,3,4" />
+<@x_combo field="txt13" rule="1,2,3,4" />
+<@x_combo field="txt14" rule="1,2,3,4" />
+<@x_combo field="txt15" rule="1,2,3,4" />
+<@x_combo field="txt16" rule="1,2,3,4" />
+<@x_combo field="txt17" rule="1,2,3,4" />
+<@x_combo field="txt18" rule="1,2,3,4" />
+<@x_combo field="txt19" rule="1,2,3,4" />
+<@x_combo field="txt20" rule="1,2,3,4" />
+<@x_combo field="txt21" rule="1,2,3,4" />
+<@x_combo field="txt22" rule="1,2,3,4" />
+<@x_combo field="txt23" rule="1,2,3,4" />
+<@x_combo field="txt24" rule="1,2,3,4" />
+<@x_combo field="txt25" rule="1,2,3,4" />
+<@x_combo field="txt26" rule="1,2,3,4" />
+<@x_combo field="txt27" rule="1,2,3,4" />
+<@x_combo field="txt28" rule="1,2,3,4" />
+<@x_combo field="txt29" rule="1,2,3,4" />
+<@x_combo field="txt30" rule="1,2,3,4" />
+<@x_combo field="txt31" rule="1,2,3,4" />
+<@x_combo field="txt32" rule="1,2,3,4" />
+<@x_combo field="txt33" rule="1,2,3,4" />
+<@x_combo field="txt34" rule="1,2,3,4" />
+<@x_combo field="txt35" rule="1,2,3,4" />
+<@x_combo field="txt36" rule="1,2,3,4" />
+<@x_combo field="txt37" rule="1,2,3,4" />
+<@x_combo field="txt38" rule="1,2,3,4" />
+<@x_combo field="txt39" rule="1,2,3,4" />
+<@x_combo field="txt40" rule="1,2,3,4" />
+<@x_combo field="txt41" rule="1,2,3,4" />
+<@x_combo field="txt42" rule="1,2,3,4" />
+<@x_combo field="txt43" rule="1,2,3,4" />
+<@x_combo field="txt44" rule="1,2,3,4" />
+<@x_combo field="txt45" rule="1,2,3,4" />
+<@x_combo field="txt46" rule="1,2,3,4" />
+<@x_combo field="txt47" rule="1,2,3,4" />
+<@x_combo field="txt48" rule="1,2,3,4" />
+<@x_combo field="txt49" rule="1,2,3,4" />
+<@x_combo field="txt50" rule="1,2,3,4" />
+<@x_combo field="txt51" rule="1,2,3,4" />
+<@x_combo field="txt52" rule="1,2,3,4" />
+<@x_combo field="txt53" rule="1,2,3,4" />
+<@x_combo field="txt54" rule="1,2,3,4" />
+<@x_combo field="txt55" rule="1,2,3,4" />
+<@x_combo field="txt56" rule="1,2,3,4" />
+<@x_combo field="txt57" rule="1,2,3,4" />
+<@x_combo field="txt58" rule="1,2,3,4" />
+<@x_combo field="txt59" rule="1,2,3,4" />
+<@x_combo field="txt60" rule="1,2,3,4" />
+<@x_inputtext field="txt61"  />
+<@x_inputtext field="txt62"  />
+<@x_inputtext field="txt63"  />
+<@x_inputtext field="txt64"  />
+<@x_inputtext field="txt65"  />
+<@x_inputtext field="txt66"  />
+<@x_inputtext field="txt67"  />
+<@x_inputtext field="txt68"  />
+<@x_inputtext field="txt69"  />
+<@x_inputtext field="txt70"  />
+<@x_divedit field="txt71"  />
+<@x_divedit field="txt72"  />
+<@x_divedit field="txt73"  />
+<@x_divedit field="txt74"  />
+<@x_divedit field="txt75"  />
+<@x_divedit field="txt76"  />
+<@x_divedit field="txt77"  />
+<@x_divedit field="txt78"  />
+<@x_divedit field="txt79"  />
+<@x_divedit field="txt80"  />
+<@x_inputtext field="txt81"  />
+<@x_inputtext field="txt82"  />
+<@x_inputtext field="txt83"  />
+<@x_inputtext field="txt84"  />
+<@x_inputtext field="txt85"  />
+<@x_inputtext field="txt86"  />
+<@x_inputtext field="txt87"  />
+<@x_inputtext field="txt88"  />
+<@x_inputtext field="txt89"  />
+<@x_inputtext field="txt90"  />
+<@x_checkbox field="chk01"/>
+<@x_checkbox field="chk02" multiSelect="false"/>
+<@x_inputtext field="other1" />
+<@x_inputtext field="other2" />
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box2">${BZZYJGMC}</div>
+    <div class="box11">疑难危重病历讨论记录</div>
+    <div class="border1">
+    	<table width="650" border="0" cellspacing="0" cellpadding="0">
+          <tr align="center">
+            
+            <td><span>住院号：</span>
+              <input name="BZBAH" id="BZBAH" type="text" class="txt100px"/></td>
+          </tr>
+        </table>
+  </div>
+  <table width="650" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+          <td>姓名：<input type="text" name="patname" id="patname" class="txt11" style="width:80px" /></td>
+          <td>性别：<input type="text" name="sex" id="sex" class="txt11" style="width:20px" /></td>
+          <td>年龄：<input type="text" name="calculateage" id="calculateage" class="txt11" style="width:30px" /></td>
+          <td>科别：<input type="text" name="deptname" id="deptname" class="txt11" style="width:90px"/></td>
+          <td>病室：<input name="cwardname" id="cwardname" type="text" class="txt150px"/></td>
+          <td>床号：<input name="cbedno" id="cbedno" type="text" class="txt50px"/></td>
+      </tr>
+  </table>
+  <table>
+      <tr>
+          <td>时间：<input type="text" name="inputTime" id="inputTime"></td>
+      </tr>
+      <tr>
+        <td>地点：<input type="text" name="didian" id="didian"></td>
+      </tr>
+      <tr>
+        <td>参加人员(全名及职称)：<div name="personInfo" id="personInfo"></div></td>
+      </tr>
+      <tr>
+        <td>主持人：</td>
+      </tr>
+      <tr>
+        <td>病理报告人：</td>
+      </tr>
+      <tr>
+        <td>病历简要：</td>
+      </tr>
+      <tr>
+        <td>发言人：</td>
+      </tr>
+      <tr>
+        <td>总结意见：</td>
+      </tr>
+  </table>
+  <table>
+      <tr>
+          <td>
+              <td>主持人：</td>
+              <td>记录者：</td>
+          </td>
+      </tr>
+  </table>
+  <script type="text/javascript">
+    $(function(){
+    <@x_inputtext field="BZBAH" defaultValue="patient.inpno"/>
+    <@x_inputtext field="cwardname" defaultValue="patient.cwardname"/>
+    <@x_inputtext field="cbedno" defaultValue="patient.cbedno"/> 
+    <@x_inputtext field="calculateage" defaultValue="patient.calculateage"/>
+    <@x_inputtext field="patname" defaultValue="patient.patname"/>
+    <@x_inputtext field="sex" defaultValue="patient.sex"/>
+    <@x_inputtext field="deptname" defaultValue="patient.deptname"/>
+    <@x_inputtext field="inputTime" defaultValue="nowtime" rule="yyyy-MM-dd HH:mm"/>
+    <@x_inputtext field="didian"/>
+    <@x_inputtext field="personInfo"/>
+
+
+
+    <@x_inputtext field="national" defaultValue="patient.national"/>
+    <@x_inputtext field="maritalstatus" defaultValue="patient.maritalstatus"/>
+    <@x_inputtext field="cadd" defaultValue="patient.cadd"/>
+    <@x_inputtext field="historyPetitioner"/>
+    <@x_inputtext field="admiss_date" defaultValue="patient.admiss_date" rule="yyyy-MM-dd HH:mm"/>
+ 
+    });
+    </script>
+</body>
+</html>

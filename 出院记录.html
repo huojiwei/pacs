@@ -1,0 +1,124 @@
+
+<div class="box2">${BZZYJGMC}</div>
+  <div class="box11">出院记录</div>
+	<div class="border1">
+    	<table width="650" border="0" cellspacing="0" cellpadding="0">
+          <tr align="center">
+            <td><Span>病区：</Span>
+              <input name="cwardname" id="cwardname" type="text" class="txt150px"/>
+            </td>
+            <td><Span>床号： </Span>
+              <input name="cbedno" id="cbedno" type="text" class="txt50px"/>
+           </td>
+            <td><span>住院号：</span>
+              <input name="BZBAH" id="BZBAH" type="text" class="txt100px"/></td>
+          </tr>
+        </table>
+  </div>
+   <table width="650" border="0" cellspacing="0" cellpadding="0" class="mar1">
+      <tr>
+        <td width="40%"><Span>姓&emsp;&emsp;名：</Span>
+          <input name="patname" id="patname" type="text" class="txt1"/></td>
+        <td width="60%"><Span>性&emsp;&emsp;别：</Span>
+          <input name="sex" id="sex" type="text" class="txt1" style="width:300px;"/></td>          
+      </tr>
+      <tr>
+        <td><Span>年&emsp;&emsp;龄：</Span>
+         <input name="calculateage" id="calculateage" type="text" class="txt1"/></td>
+        <td width="50%"><Span>职&emsp;&emsp;业：</Span>
+          <input name="cadd" id="cadd" type="text" class="txt200px" style="width:300px;"/></td>
+      </tr>   
+    </table>
+    <table width="650" border="0" cellspacing="2" cellpadding="0" class="mar1">
+      <tr>
+        <td  valign="top"><Span>入院诊断：</Span>
+        </td>
+        <td  >
+          <div name="ruyuanzhenduan" id="ruyuanzhenduan" style="width:280px;"></div>
+        </td>
+        <td valign="top"><Span>入院时间：</Span>
+        <input name="admiss_date" id="admiss_date" type="text" class="txt200px" style="width:150px;"/></td>
+      </tr>
+	   <tr>
+        <td valign="top"><Span>出院诊断：</Span>
+          <td>
+            <div name="chuyuanzhenduan" id="chuyuanzhenduan" type="text" style="width:280px;"></td>
+          </td>
+        <td valign="top"><Span>出院时间：</Span>
+           <input name="out_date" id="out_date" type="text" class="txt1" class="txt200px" style="width:150px;"/></td>          
+       </tr>  
+       <tr>
+        <td colspan="3"><Span>住院天数：</Span>
+          <input name="zhuyuantianshu" id="zhuyuantianshu" type="text" class="txt1"/></td>           
+       </tr>  
+    </table>
+  <table width="650" border="0" cellspacing="3" cellpadding="0"  class="mar1">
+      <tr>
+          <td  ><strong>入院情况:</strong></td>
+          <td ><div name="ruyuanqingkuang" id="ruyuanqingkuang"  style="width:540px;text-align:left;"></div></td>
+      </tr>
+    <tr>
+      <td width="100" valign="top" ><strong>诊疗经过：</strong></td>
+      <td>
+        <div name="chiefComplaint" id="chiefComplaint"  style="width:540px;text-align:left;"></div>
+     </td>
+    </tr>
+    <tr>
+      <td width="100" valign="top"><strong>出院情况：
+</strong></td>
+      <td>
+        <div name="presentIllnessHistory" id="presentIllnessHistory"   style="width:540px;text-align:left;"></div>
+      </td>
+    </tr>
+    <tr>
+      <td width="100" valign="top"><strong>出院医嘱：
+      </strong></td>
+      <td>
+        <div name="pastHistory" id="pastHistory"  style="width:540px;text-align:left;"></div>
+     </td>
+    </tr>
+  </table>    
+<table width="650" height="60" border="0" cellspacing="0" cellpadding="0" class="mar1">
+      <tr>
+          <td width='220'></td>
+        <td width="250">主治医生：<input name="mainDoctor" id="mainDoctor"  type="text" class="ryju1"/></td>
+        <td width="180">医师签名：
+        <input name="signDoctor" id="signDoctor"  type="text" class="ryju1"/></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td><input name="signyear" id="signyear" type="text" class="txt7"/>
+          年
+          <input name="signmonth" id="signmonth" type="text" class="txt15px"/>
+          月
+          <input name="signday" id="signday" type="text" class="txt15px"/>
+          日</td>
+      </tr>
+    </table>
+<script type="text/javascript">
+$(function(){
+<@x_inputtext field="cwardname" defaultValue="patient.cwardname"/>
+<@x_inputtext field="cbedno" defaultValue="patient.cbedno"/>
+<@x_inputtext field="BZBAH" defaultValue="patient.inpno"/>
+<@x_inputtext field="patname" defaultValue="patient.patname"/>
+<@x_inputtext field="zhuyuantianshu"/>
+<@x_inputtext field="sex" defaultValue="patient.sex"/>
+<@x_inputtext field="dateofbirth" defaultValue="patient.dateofbirth"  rule="yyyy-MM-dd"/>
+<@x_inputtext field="cadd" defaultValue="patient.cadd"/>
+<@x_inputtext field="admiss_date" defaultValue="patient.admiss_date" rule="yyyy-MM-dd HH:mm"/>
+<@x_inputtext field="out_date"  rule="yyyy-MM-dd HH:mm"/>
+<@x_divedit field="chiefComplaint"/>
+<@x_divedit field="presentIllnessHistory"/>
+<@x_inputtext field="calculateage" defaultValue="patient.calculateage"/>
+<@x_divedit field="pastHistory"/>
+<@x_divedit  field="ruyuanqingkuang"/>
+<@x_divedit  field="ruyuanzhenduan"/>
+<@x_divedit  field="chuyuanzhenduan"/>
+<@x_inputtext field="signDoctor"/>
+<@x_inputtext field="mainDoctor"/>
+<@x_inputtext field="signyear" defaultValue="nowtime" rule="yyyy"/> 
+<@x_inputtext field="signmonth" defaultValue="nowtime" rule="MM"/> 
+<@x_inputtext field="signday" defaultValue="nowtime" rule="dd"/> 
+});
+</script>

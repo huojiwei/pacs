@@ -1,0 +1,685 @@
+<style type="text/css">
+input[type=text]{
+	font-size:14px;
+}
+</style>
+
+<table width="670" border="0" cellspacing="0" cellpadding="0"  class="basy7" style="font-size:14px;border:1px solid #000000;" >
+      <tr>
+        <td  align="center" colspan="2">医疗机构
+        	<input  type="text" name="bzzyjgmc" id="bzzyjgmc" class="txt13" style="width:230px;"/></td>
+        <td width="290" align="center">（组织机构代码
+          <input type="text" name="hosnum" id="hosnum" style="width:120px;"/>
+		）</td>
+	</tr>
+    <tr>
+      <td align="left">医疗付费方式
+        <input name="BZYLFFFS" id="BZYLFFFS" type="text" class="input_05" style="width:60px;"/></td>
+      <td align="left" colspan="2"><span class="box1 basy1">住&ensp;院&ensp;病&ensp;案&ensp;首&ensp;页</span></td>
+    </tr>
+    <tr>
+        <td width="190">健康卡号：
+        <input name="bzjkkh" id="bzjkkh" type="text" style="width:80px;"/></td>
+        <td width="300" align="center">
+        	第 <input name="inptimes" id="inptimes" type="text" class="width_01" size="15"/>次住院&nbsp;
+        	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        	病案号：<input name="BZBAH" id="BZBAH" type="text" size="11" style="width:63px;"/>
+        </td>
+        <td align="right" width="130">
+			住院号：<input name="inpnos" id="inpnos" type="text" size="11" style="width:69px;"/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </td>
+    </tr>
+</table>
+    
+<table width="670" border="0" cellspacing="1" cellpadding="0"  class="basy7" style="font-size:14px;margin-top:1px;line-height:14px;border:1px solid #000000;">
+      <tr>
+        <td>姓名 <input name="BZXM" id="BZXM" type="text" class="txt9" style="width:60px;"/>&emsp;性别
+        <input type="text" name="BZXBDM" id="BZXBDM" class="input_05"  />
+          1.
+        男
+          2.
+        女&emsp;出生日期 <input name="birth_year" id="birth_year" class="txt13 width_02"  />
+        年
+        <input name="birth_month" id="birth_month" class="txt13 width_01"  />
+        月
+        <input name="birth_day" id="birth_day" class="txt13 width_01"  />
+        日&emsp;年龄<input name="calculateage" id="calculateage" type="text" class="txt13 txt40px"  />&emsp;国籍
+        <input name="GJDM" id="GJDM" type="text" class="txt9"/>
+      <br/>（年龄不足1周岁的） 年龄 <input name="month_age" id="month_age" type="text" class="txt13 width_02"  /> 月 
+          &emsp;新生儿出生体重
+          <input name="bownweight" id="bownweight" type="text" class="txt13 width_02"  />
+        克&emsp;新生儿入院体重
+        <input name="inweight" id="inweight" type="text" class="txt13 width_02"  />
+克&emsp;<br/>出生地
+        <input name="Province_B" id="Province_B" type="text" class="txt11 txt50px"/>省（区、市）
+        <input name="City_B" id="City_B" type="text" class="txt13 width_02" />市
+        <input name="County_B" id="County_B" type="text" class="txt13 width_02" />(市/县)&nbsp;籍贯
+        <input name="Province_R" id="Province_R" type="text" class="txt13 txt50px" />省（区、市）
+        <input name="City_R" id="City_R" type="text" class="txt13 width_02" />市&nbsp;民族
+        <input name="BZMZDM" id="BZMZDM" type="text" class="txt13 txt50px" />
+      <br/>
+身份证号
+        <input name="BZSFBSHM" id="BZSFBSHM" type="text" class="txt13"/>          
+        职业
+        <input name="BMZYBMXTMC" id="BMZYBMXTMC" type="text" class="txt9" />
+        婚姻
+        <input name="BMHYZKLBDM" id="BMHYZKLBDM"type="text" class="input_05" />
+        1.未婚2.已婚3.丧偶4.离婚9.其它
+      <br/>现住址
+          <input name="Province" id="Province" type="text" class="txt13 txt110px" style="width:35px;"/>
+省（区、市）
+<input name="City" id="City" type="text" class="txt13 txt50px" />
+市
+<input name="County" id="County" type="text" class="txt13 txt50px" />
+(市/县)&emsp;电话
+<input name="BMLXDHHM" id="BMLXDHHM" type="text" class="txt13"/>
+邮编
+<input name="BZHZDZDYB" id="BZHZDZDYB" type="text" class="txt13 txt55px" />
+      <br/>户口地址
+          <input name="BZBRHKDZ" id="BZBRHKDZ" type="text" class="txt13 txt485px"/>&emsp;
+邮编
+<input name="BZBRHKYB" id="BZBRHKYB" type="text" class="txt13 txt55px"  />
+      <br/>工作单位及地址
+        <input name="BZGZDWMC" id="BZGZDWMC" type="text" class="txt13 basy4" style="width:170px;"/>
+        单位电话
+        <input name="PhoneCall_U" id="PhoneCall_U" type="text" class="txt13" style="width:110px;"/>
+        邮编
+        <input name="BZGZDDYB" id="BZGZDDYB" type="text" class="txt13 txt55px"  />
+      <br/>联系人姓名
+        <input name="BZLXRXM" id="BZLXRXM" type="text" class="txt11"/>
+        关系
+        <input name="BZLXRYHZGX" id="BZLXRYHZGX" type="text" class="txt11"/>
+        地址
+        <input name="BZLXRDZ" id="BZLXRDZ" type="text" class="txt13"/>
+        电话
+        <input name="BZLXRDH" id="BZLXRDH" type="text" class="txt13" />
+     <br/>入院途径
+        <input name="patSource" id="patSource" type="text" class="input_05" />
+        1.急诊&emsp;2.门诊&emsp;3.其它医疗机构转入,机构名称：<input name="input1" id="input1" type="text" class="txt13" />9.其它
+      <br/>入院时间
+          <input name="year_ry" id="year_ry" type="text" class="txt13 width_02" />
+        年
+        <input name="month_ry" id="month_ry" type="text" class="txt13 width_01" />
+        月
+        <input name="day_ry" id="day_ry" type="text" class="txt13 width_01" />
+        日
+        <input name="hour_ry" id="hour_ry" type="text" class="txt13 width_01" />
+        时&emsp;入院科别
+        <input name="BZHZZYDKSMC" id="BZHZZYDKSMC" type="text" class="txt13 txt70px" />
+        病房
+        <input name="WardName" id="WardName" type="text" class="txt13 txt70px"/>
+        转科科别 <input name="BZZKKB" id="BZZKKB" type="text" class="txt13 txt70px" /><br/>
+        出院时间
+          <input name="year_cy" id="year_cy" type="text" class="txt13 width_02"/>
+年
+<input name="month_cy" id="month_cy" type="text" class="txt13 width_01" />
+月
+<input name="day_cy" id="day_cy" type="text" class="txt13 width_01" />
+日
+<input name="hour_cy" id="hour_cy" type="text" class="txt13 width_01" />
+时&emsp;出院科别
+<input name="BZZYHZCYSDKSMC" id="BZZYHZCYSDKSMC" type="text" class="txt13 txt70px" />
+病房
+<input name="cwardname" id="cwardname" type="text" class="txt13 txt70px" />
+实际住院
+<input name="BZZYTS" id="BZZYTS" type="text" class="txt13 width_01" />
+天<br/>门（急）诊诊断
+          <input name="bzmzzd" id="bzmzzd" type="text" class="txt13 txt350px"/>
+        疾病编码
+        <input name="bzmzjbbm" id="bzmzjbbm" type="text" class="txt120"/></td>
+      </tr>
+    </table>
+    <table width="670"   border="1" cellspacing="1" cellpadding="0" class="div01 mar1" style="font-size:14px;line-height:22px;" >
+      <tr align="center">
+        <td width="235">出院诊断</td>
+        <td width="70">疾病编码</td>
+        <td width="10">病<br>情</td>
+        <td width="235">出院诊断</td>
+        <td width="70">疾病编码</td>
+        <td width="10">病<br>情</td>
+      </tr>
+      <tr align="center">
+        <td>主要诊断：<input name="bzzyzd" id="bzzyzd" class="autowidth" type="text" style="width:164px;"/></td>
+        <td><input name="bzzyzdjbbm" id="bzzyzdjbbm" type="text" style="width:70px;text-align:center;"/></td>
+        <td align="center"><input name="bzzyzdrybq" id="bzzyzdrybq" type="text" style="width:10px;"/></td>
+        <td>其他诊断：<input name="bzzyzd2" id="bzzyzd2" class="autowidth" type="text" style="width:164px;"/></td>
+        <td><input name="bzzyzdjbbm2" id="bzzyzdjbbm2" type="text" style="width:70px;text-align:center;"/></td>
+        <td align="center"><input name="bzzyzdrybq2" id="bzzyzdrybq2" type="text" style="width:10px;"/></td>
+      </tr>
+      <tr align="center">
+        <td>其它诊断：<input name="bzqtzd2" id="bzqtzd2" class="autowidth" type="text" style="width:164px;"/></td>
+        <td><input name="bzqtzdjbbm2" id="bzqtzdjbbm2" type="text" style="width:70px;text-align:center;"/></td>
+        <td align="center"><input name="bzqtzdrybq2" id="bzqtzdrybq2" type="text" style="width:10px;"/></td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input name="bzqtzd22" id="bzqtzd22" class="autowidth" type="text" style="width:164px;"/></td>
+        <td><input name="bzqtzdjbbm22" id="bzqtzdjbbm22" type="text" style="width:70px;text-align:center;"/></td>
+        <td align="center"><input name="bzqtzdrybq22" id="bzqtzdrybq22" type="text" style="width:10px;"/></td>
+      </tr>
+    <#list 3..8 as x>
+      <tr align="center">
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input name="bzqtzd${x}" id="bzqtzd${x}" type="text" class="autowidth" style="width:164px;"/></td>
+        <td><input name="bzqtzdjbbm${x}" id="bzqtzdjbbm${x}" type="text" style="width:70px;text-align:center;"/></td>
+        <td align="center"><input name="bzqtzdrybq${x}" id="bzqtzdrybq${x}" type="text" style="width:10px;"/></td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input name="bzqtzd2${x}" id="bzqtzd2${x}" type="text" class="autowidth" style="width:164px;"/></td>
+        <td><input name="bzqtzdjbbm2${x}" id="bzqtzdjbbm2${x}" type="text" style="width:70px;text-align:center;"/></td>
+        <td align="center"><input name="bzqtzdrybq2${x}" id="bzqtzdrybq2${x}" type="text" style="width:10px;"/></td>
+      </tr>
+	</#list>           
+      <tr align="left"><td colspan="6">入院病情：1.有&emsp;2.临床未确定&emsp;3.情况不明&emsp;4.无</td>
+      </tr>
+    </table>
+    <table width="670" border="0" cellspacing="1" cellpadding="0"  class="basy7" style="font-size:14px;line-height:14px;border:1px solid #000000; margin-bottom:15px">
+      <tr>
+        <td>损伤、中毒的外部原因
+	        <input name="BZSSHZDDWBYS" id="BZSSHZDDWBYS" type="text" class="txt13 txt2" style="width:320px;"/>
+	        疾病编码
+	        <input name="bzsshzdjbbm" id="bzsshzdjbbm" type="text" class="txt11" />
+        </td>
+      </tr>
+      <tr>
+        <td>病理诊断：
+	        <input name="BZBLZD" id="BZBLZD" type="text" class="txt13 txt400px" style="width:390px;"/>
+			疾病编码
+	        <input name="bzblzdjbbm" id="bzblzdjbbm" type="text" class="txt11"/><br/>
+			病理号
+	        <input name="bzblzdblh" id="bzblzdblh" type="text" class="txt11" style="width:419px;"/>
+	 		ICD-0-3 &nbsp;
+	        <input name="icdbh" id="icdbh" type="text" class="txt11"/>
+        </td>
+      </tr>
+      <tr>
+        <td>最高诊断依据
+	        <input name="zgzdyj" id="zgzdyj" type="text" class="txt11"  />
+	         药物过敏
+	        <input name="bzywgm" id="bzywgm" type="text" class="input_05"  />
+	        1.无&ensp;2.有，过敏药物：
+	        <input name="BZGMYWMC" id="BZGMYWMC" type="text" class="txt11" size="25"/>
+	         死亡患者尸检
+	        <input name="BZSJ" id="BZSJ" type="text" class="input_05"  />
+	        1.是&ensp;2.否
+        </td>
+      </tr>
+      <tr>
+        <td>血型
+        <input name="BZABOXX" id="BZABOXX" type="text" class="input_05"  />
+        1.A&ensp;2.B&ensp;3.O&ensp;4.AB&ensp;5.不详&ensp;6.未查&emsp;Rh
+        <input name="BZRHXX" id="BZRHXX" type="text" class="input_05"  />
+        1.阴&ensp;2.阳&ensp;3.不详&ensp;4.未查</td>
+      </tr>
+       <tr>
+        <td>护理级别：
+        1.特级护理<input name="tjhl" id="tjhl" type="text" style="width:35px;" /> 天
+        2.I级护理<input name="yjhl" id="yjhl" type="text" style="width:35px;"  /> 天
+        3.II级护理<input name="ejhl" id="ejhl" type="text" style="width:35px;"  /> 天
+        4.III级护理<input name="sjhl" id="sjhl" type="text" style="width:35px;"  /> 天
+      </tr>
+      <tr>
+        <td>科主任<input name="BZKZRXM" id="BZKZRXM" type="text" class="txt11"/>
+          
+        主任（副主任）医师
+        <input name="BZZRYSXM" id="BZZRYSXM" type="text" class="txt11"/>
+        &ensp;主治医师
+        <input name="BZZGYSXM" id="BZZGYSXM" type="text" class="txt11" />
+        &ensp;住院医师
+        <input name="BZYYSXM" id="BZYYSXM" type="text" class="txt11"/>
+     <br/>责任护士
+          <input name="bzzrhs" id="bzzrhs" type="text" class="txt11"/>
+        &ensp;进修医师
+        <input name="BZJXYSXM" id="BZJXYSXM" type="text" class="txt11"/>
+        &ensp;实习医师
+        <input name="BZSXYSXM" id="BZSXYSXM" type="text" class="txt11"/>
+        &ensp;编码员
+        <input name="BZBMY" id="BZBMY" type="text" class="txt11"/></td>
+      </tr>
+      <tr>
+        <td>病案质量
+        <input name="BZBAZL" id="BZBAZL" type="text" class="input_05" />
+        1.甲&nbsp;2.已&nbsp;3.丙&emsp;质控医师
+          <input name="BZZKYS" id="BZZKYS" type="text" class="txt16 txt13"/>
+        质控护士
+        <input name="BZZKHS" id="BZZKHS" type="text" class="txt16 txt13"/>
+        质控日期
+        <input name="year_zkrq" id="year_zkrq" type="text" class="txt13 width_02"  />
+        年
+        <input name="month_zkrq" id="month_zkrq" type="text" class="txt13 width_01"  />
+        月
+        <input name="day_zkrq" id="day_zkrq" type="text" class="txt13 width_01"  />
+        日</td>
+      </tr>
+    </table>
+    <br><!-------------------第二页开始------------------>
+	<table width="670"  border="1" cellspacing="1" cellpadding="0" class="div01 mar1" style="font-size:14px;" >
+      <tr align="center" >
+        <td width="60" rowspan="2">手术及<br>操作编码</td>
+        <td width="70" rowspan="2">手术及<br>操作日期</td>
+        <td width="40" rowspan="2">手术级别</td>
+        <td width="150" rowspan="2">手术及操作名称</td>
+        <td width="150" colspan="3">手术及操作医师</td>
+        <td width="60" rowspan="2">切口愈合等级</td>
+        <td width="70" rowspan="2">麻醉方式</td>
+        <td width="70" rowspan="2" >麻醉医师</td>
+      </tr>
+      <tr align="center">
+        <td width="50">术者</td>
+        <td width="50">I助</td>
+        <td width="50">II助</td>
+      </tr>
+      
+      <#list 1..4 as x>
+      <tr align="center">
+        <td><input name="bzssczbm${x}" id="bzssczbm${x}" type="text" class="basy6 basy61"/></td>
+        <td><input name="bzssczrq${x}" id="bzssczrq${x}" type="text" class="basy6 txt80px"/></td>
+        <td><input name="bzssjb${x}" id="bzssjb${x}" type="text" class="basy6 txt15px"/></td>
+        <td><textarea rows="10" cols="3" name="bzssczmc${x}" id="bzssczmc${x}" type="text" class="basy6" style="height: 47px;width: 97%; line-height: 16px;" > </textarea></td>
+        <td><input name="bzsssz${x}" id="bzsssz${x}" type="text" class="basy6 txt40px"/></td>
+        <td><input name="bzsszs1${x}" id="bzsszs1${x}" type="text" class="basy6 txt40px"/></td>
+        <td><input name="bzsszs2${x}" id="bzsszs2${x}" type="text" class="basy6 txt40px"/></td>
+        <td><input name="bzssqkyhdj${x}" id="bzssqkyhdj${x}" type="text" class="basy6 basy62"/></td>
+        <td><input name="bzssmzfs${x}" id="bzssmzfs${x}" type="text" class="basy6 txt60px"/></td>
+        <td><input name="bzssmzys${x}" id="bzssmzys${x}" type="text" class="basy6 txt60px"/></td>
+      </tr>
+	 </#list>
+    </table>
+    <table width="670" border="0" cellspacing="1" cellpadding="0"  class="basy7" style="font-size:14px;border:1px solid #000000;line-height:14px;">
+      <tr>
+        <td>临床路径：
+			入径情况<input name="rjqk" id="rjqk" type="text" class="input_05"  />1.是&ensp;2.否 &ensp;
+			完成情况：<input name="wcqk" id="wcqk" type="text" class="input_05"  />1.完成&ensp;2.退出&ensp;
+			变异情况：<input name="byqk" id="byqk" type="text" class="input_05"  />1.有&ensp;2.无&ensp;
+        </td>
+      </tr>
+      <tr>
+        <td>离院方式
+        <input name="bzlyfs" id="bzlyfs" type="text" class="input_05"  />
+        1.医嘱离院&emsp;2.医嘱转院，拟接收医疗机构名称：
+        <input name="bzyzzyjgmc" id="bzyzzyjgmc" type="text" class="txt13" size="25"/>
+        <br/>3.医嘱转社区卫生服务机构/乡镇卫生院，拟接收医疗机构名称：
+        <input name="bzzsqhxzwsyjgmc" id="bzzsqhxzwsyjgmc" type="text" class="txt13" size="10"/>
+        4.非医嘱离院5.死亡9.其它</td>
+      </tr>
+      <tr>
+        <td>是否有出院31天内再住院计划：
+        <input name="bzzzyjh" id="bzzzyjh" type="text" class="input_05"  />
+        1.无&emsp;2.有，目的：        
+        <input name="bzzzyjhmd" id="bzzzyjhmd" type="text" class="txt13" size="10"/></td>
+      </tr>
+      <tr>
+        <td>颅脑损伤患者昏迷时间：入院前
+        <input name="days_ryqhm" id="days_ryqhm" type="text" class="txt13 width_01"  />
+        天
+        <input name="hours_ryqhm" id="hours_ryqhm" type="text" class="txt13 width_01"  />
+        小时
+        <input name="minutes_ryqhm" id="minutes_ryqhm" type="text" class="txt13 width_01"  />
+        分钟&emsp;&emsp;入院后
+        <input name="days_ryhhm" id="days_ryhhm" type="text" class="txt13 width_01"  />
+        天
+        <input name="hours_ryhhm" id="hours_ryhhm" type="text" class="txt13 width_01"  />
+        小时
+        <input name="minutes_ryhhm" id="minutes_ryhhm" type="text" class="txt13 width_01"  />
+        分钟</td>
+      </tr>
+      <tr>
+        <td>住院费用（元）：总费用
+          <input name="BZFYZJ" id="BZFYZJ" type="text" class="txt13" size="10"/>
+          （自付金额：
+          <input name="bzfyzjzjje" id="bzfyzjzjje" type="text" class="txt13" size="10"/>
+          ）<br/>
+          <strong>1.</strong>综合医疗服务类：（1）一般医疗费：
+        <input name="bzfyybylf" id="bzfyybylf" type="text" class="txt11"/>
+        （2）一般治疗操作费：
+        <input name="bzfyybczf" id="bzfyybczf" type="text" class="txt11"/>
+     <br/>&emsp;（3）护理费：
+        <input name="BZHLF" id="BZHLF" type="text" class="txt11"/>
+        （4）其它费用：
+        <input name="bzzhylqtfy" id="bzzhylqtfy" type="text" class="txt11"/>
+      <br/><strong>2.</strong>诊断类：（5）病理诊断费：
+          <input name="bzfyblzdf" id="bzfyblzdf" type="text" class="txt11"/>
+          （6）实验室诊断费：
+          <input name="bzfysyszdf" id="bzfysyszdf" type="text" class="txt11"/>
+          （7）
+          影像学诊断<br/>&emsp;费：<input name="bzfyyxxzdf" id="bzfyyxxzdf" type="text" class="txt11"/>
+          （8）临床诊断项目费：
+          <input name="bzfylczdf" id="bzfylczdf" type="text" class="txt11"/>
+      <br/><strong>3.</strong>治疗类：（9）非手术治疗项目费：
+          <input name="bzfyfsszlf" id="bzfyfsszlf" type="text" class="txt11"/> 
+        （临床物理治疗费： 
+          <input name="bzfylcwlzlf" id="bzfylcwlzlf" type="text" class="txt11"/> 
+        ）<br/>&emsp;（10）手术治疗费：
+        <input name="bzfysszlf" id="bzfysszlf" type="text" class="txt11"/>
+        （麻醉费：
+        <input name="bzfymzf" id="bzfymzf" type="text" class="txt11"/>
+        手术费：
+        <input name="bzfyssf" id="bzfyssf" type="text" class="txt11"/>
+        ）<br/><strong>4.</strong>康复类：（11）康复费：
+        <input name="bzfykff" id="bzfykff" type="text" class="txt11"/>
+		<span class="edui-clickable" id ="cost" name="cost" onclick="javascript:calculateCost();">计算费用</span> 
+      <br/><strong>5.</strong>中医类：（12）中医治疗费：
+        <input name="bzfyzyzlf" id="bzfyzyzlf" type="text" class="txt11"/>
+      <br/><strong>6.</strong>西药类：（13）西药费：
+        <input name="BZXYF" id="BZXYF" type="text" class="txt11"/>
+        （抗菌药物费用：
+        <input name="bzfykjywf" id="bzfykjywf" type="text" class="txt11"/>
+        ）<br/><strong>7.</strong>中药类：（14）中成药费：
+          <input name="BZZCY1" id="BZZCY1" type="text" class="txt11"/>
+        （15）中草药费：
+        <input name="BZZCY2" id="BZZCY2" type="text" class="txt11"/>
+      <br/><strong>8.</strong>血液和血液制品类：（16）血费：
+        <input name="bzfyxf" id="bzfyxf" type="text" class="txt11"/>
+        （17）蛋白类制品费：
+        <input name="bzfydblzpf" id="bzfydblzpf" type="text" class="txt11"/>
+        （18）球蛋白
+      <br/>&emsp;类制品费：   	    
+   	    <input name="bzfyqdblzpf" id="bzfyqdblzpf" type="text" class="txt11"/>
+   	    （19）凝血因子类制品费：
+   	    <input name="bzfynxyzlzpf" id="bzfynxyzlzpf" type="text" class="txt13 basy3"  />
+   	    （20）细胞因子类制品费：
+   	    <input name="bzfyxbyzlzpf" id="bzfyxbyzlzpf" type="text" class="txt13 basy3"  />
+      <br/><strong>9.</strong>耗材类：（21）检查用一次性医用材料费：
+   	    <input name="bzfyjcyycxclf" id="bzfyjcyycxclf" type="text" class="txt11"/>
+   	    （22）治疗用一次性医用材料费：        
+      <br/>&emsp;<input name="bzfyzlyycxclf" id="bzfyzlyycxclf" type="text" class="txt11"/>
+      	  （23）手术用一次性医用材料费：
+        <input name="bzfyssyycxclf" id="bzfyssyycxclf" type="text" class="txt11"/>
+      <br/><strong>10.</strong>其他类：（24）其它费：
+   	    <input name="BZQTFY" id="BZQTFY" type="text" class="txt11"/></td>
+      </tr>
+<tr>
+        <td>单病种管理：
+        <input name="singleDiseaseManagement" value="1" type="checkbox"/>
+        1.有&emsp;<input name="singleDiseaseManagement" value="2" type="checkbox"/>2.无 &nbsp;
+       临床路径管理：
+        <input name="clinicalPathwayManagement" value="1" type="checkbox"/>
+        1.完成&emsp;<input name="clinicalPathwayManagement" value="2" type="checkbox"/>2.变异
+        &emsp;<input name="clinicalPathwayManagement" value="3" type="checkbox"/>3.退出
+        &emsp;<input name="clinicalPathwayManagement" value="4" type="checkbox"/>4.未入
+  <br/> 诊断符合情况：1.门诊与住院<input type="text" name="outpatientAndInpatient " id="outpatientAndInpatient" class="input_05"/>  
+  2.入院与出院<input type="text" name="admissionAndDischarge" id="admissionAndDischarge" class="input_05"/>
+  3.术前与术后<input type="text" name="preoperativeAndPostoperative" id="preoperativeAndPostoperative" class="input_05"/>
+  4.临床与病理<input type="text" name="clinicalAndPathological" id="clinicalAndPathological" class="input_05"/>
+  5.放射与病理<input type="text" name="radiologyAndPathology" id="radiologyAndPathology" class="input_05"/>
+  （0.未做&emsp;1.符合&emsp;2.不符合&emsp;3.不确定）
+  <br/>抢救情况：抢救<input type="text" name="rescueNum" id="rescueNum" class="txt9"/>次&emsp;成功<input type="text" name="rescueSuccessNum" id="rescueSuccessNum" class="txt9"/>次  
+   <br/>
+   转归情况：<input name="outcome" value="1" type="checkbox"/>
+        1.治愈&emsp;<input name="outcome" value="2" type="checkbox"/>2.好转
+        <input name="outcome" value="3" type="checkbox"/>
+        3.未愈&emsp;<input name="outcome" value="4" type="checkbox"/>4.死亡&emsp;<input name="outcome" value="5" type="checkbox"/>5.其他
+        </td>
+      </tr>      
+    </table>
+    <table width="670" border="0" cellspacing="0" cellpadding="0" style="font-size:14px;line-height:20px;border:1px solid #000000;">
+     <tr>
+      	<td><strong>说明：</strong>（一）医疗付费方式  1.城镇职工基本医疗保险  2.城镇居民基本医疗保险 3.新型农村合作医疗 
+   	    </td>
+      </tr>
+      <tr>
+      	<td>4.贫困救助  5.商业医疗保险  6.全公费  7.全自费  8.其他社会保险  9.其他  </td>
+      </tr>
+      <tr>
+      	<td>（二）凡可由医院信息系统提供住院费用清单的，住院病案首页中可不填写“住院费用”。</td>
+      </tr>
+    </table>
+<script type="text/javascript">
+$(function(){
+	<@x_inputtext field="bzzyjgmc" defaultValue="BZZYJGMC"/>
+	<@x_inputtext field="hosnum" defaultValue="42788275-1"/>
+	<@x_inputtext field="inpnos" defaultValue="patient.inpno"/>
+	<@x_inputtext field="month_age" />
+	<@x_inputtext field="bzjkkh" />
+	<@x_inputtext field="inptimes" defaultValue="patient.inptimes"/>
+	<@x_inputtext field="BZBAH" defaultValue="patient.medrcdno"/>
+	<@x_inputtext field="BZXM" defaultValue="patient.patname"/>
+	<@x_inputtext field="birth_year" defaultValue="patient.dateofbirth" rule="yyyy"/>
+	<@x_inputtext field="birth_month" defaultValue="patient.dateofbirth" rule="MM"/>
+	<@x_inputtext field="birth_day" defaultValue="patient.dateofbirth" rule="dd"/>
+	<@x_inputtext field="calculateage" defaultValue="patient.calculateage" />
+	<@x_inputtext field="bownweight" defaultValue="patient.bownweight" />
+	<@x_inputtext field="inweight" defaultValue="patient.inweight" />
+	<@x_inputtext field="GJDM" defaultValue="patient.nationality" />
+	<@x_inputtext field="Province_B" defaultValue="湖南" />
+	<@x_inputtext field="City_B" defaultValue="常德" />
+	<@x_inputtext field="County_B" defaultValue="临澧" />
+	<@x_inputtext field="Province_R" defaultValue="湖南" />
+	<@x_inputtext field="City_R" defaultValue="常德" />
+	<@x_inputtext field="BZMZDM" defaultValue="patient.national" />
+	<@x_inputtext field="BZSFBSHM" defaultValue="patient.idnum" />
+	<@x_combo field="BMZYBMXTMC" defaultValue="patient.professional" rule="国家公务员,专业技术人员,职员,企业管理人员,工人,农民,学生,现役军人,自由职业者,个体经营者,无业人员,退（离）休人员,其他"/>
+	<@x_inputtext field="Province" defaultValue="湖南" />
+	<@x_inputtext field="City" defaultValue="常德" />
+	<@x_inputtext field="County" defaultValue="临澧" />
+	<@x_inputtext field="BMLXDHHM"  defaultValue="patient.homephone"/>
+	<@x_inputtext field="BZHZDZDYB" defaultValue="patient.postcode" />
+	<@x_inputtext field="BZBRHKDZ" defaultValue="patient.homeadd"/>
+	<@x_inputtext field="BZBRHKYB" defaultValue="patient.postcode"/>
+	<@x_inputtext field="BZGZDWMC" defaultValue="patient.unitname" />
+	<@x_inputtext field="PhoneCall_U" defaultValue="patient.phonecall_u" />
+	<@x_inputtext field="BZGZDDYB" defaultValue="patient.postcode_u" />
+	<@x_inputtext field="BZLXRXM" defaultValue="patient.contacter" />
+	<@x_combo field="BZLXRYHZGX" defaultValue="patient.relation" rule="配偶,子,女,孙子,孙女,外孙子,外孙女,父母,祖父母,外祖父母,兄,弟,姐,妹,其他"/>
+	<@x_inputtext field="BZLXRDZ" defaultValue="patient.cadd" />
+	<@x_inputtext field="BZLXRDH" defaultValue="patient.phonecall" />
+	<@x_inputtext field="year_ry" defaultValue="patient.admiss_date" rule="yyyy" />
+	<@x_inputtext field="month_ry" defaultValue="patient.admiss_date" rule="MM" />
+	<@x_inputtext field="day_ry" defaultValue="patient.admiss_date" rule="dd" />
+	<@x_inputtext field="hour_ry" defaultValue="patient.admiss_date" rule="HH" />
+	<@x_inputtext field="BZHZZYDKSMC" defaultValue="patient.deptname" />
+	<@x_inputtext field="WardName" defaultValue="patient.wardname" />
+	<@x_inputtext field="BZZKKB"  />
+	<@x_inputtext field="year_cy" defaultValue="patient.preout_date" rule="yyyy" />
+	<@x_inputtext field="month_cy" defaultValue="patient.preout_date" rule="MM" />
+	<@x_inputtext field="day_cy" defaultValue="patient.preout_date" rule="dd" />
+	<@x_inputtext field="hour_cy" defaultValue="patient.preout_date" rule="HH" />
+	<@x_inputtext field="BZZYHZCYSDKSMC" defaultValue="patient.cdeptname" />
+	<@x_inputtext field="cwardname" defaultValue="patient.cwardname" />
+	<@x_inputtext field="BZZYTS" />
+	<@x_inputtext field="BZZGYSXM"  />
+	<@x_inputtext field="bzzrhs" defaultValue="patient.nursename" />
+	<@x_inputtext field="bzmzjbbm" />
+	
+	<@x_inputsuggest field="icdbh" dickey="1" rule="icdbh"/>
+	
+	
+	<@x_inputsuggest field="bzmzzd"  dickey="1" rule="bzmzjbbm"/>
+	
+	<@x_inputsuggest field="bzzyzd"  dickey="1" rule="bzzyzdjbbm"/>
+	<@x_inputtext field="bzzyzdjbbm" />
+	<@x_combo field="bzzyzdrybq" rule="1,2,3,4,-"/>
+	<@x_inputsuggest field="bzqtzd2"  dickey="1" rule="bzqtzdjbbm2"/>
+	<@x_inputtext field="bzqtzdjbbm2" />
+	<@x_combo field="bzqtzdrybq2" rule="1,2,3,4,-"/>
+	<@x_inputsuggest field="bzqtzd3"  dickey="1" rule="bzqtzdjbbm3"/>
+	<@x_inputtext field="bzqtzdjbbm3" />
+	<@x_combo field="bzqtzdrybq3" rule="1,2,3,4,-"/>
+	
+	<@x_inputsuggest field="bzzyzd2"  dickey="1" rule="bzzyzdjbbm2"/>
+	<@x_inputtext field="bzzyzdjbbm2" />
+	<@x_combo field="bzzyzdrybq2" rule="1,2,3,4,-"/>
+	<@x_inputsuggest field="bzqtzd22"  dickey="1" rule="bzqtzdjbbm22"/>
+	<@x_inputtext field="bzqtzdjbbm22" />
+	<@x_combo field="bzqtzdrybq22" rule="1,2,3,4,-"/>
+	
+	<#list 3..8 as x>
+		<@x_inputsuggest field="bzqtzd${x}" dickey="1" rule="bzqtzdjbbm${x}"/>
+		<@x_inputtext field="bzqtzdjbbm${x}" />
+		<@x_combo field="bzqtzdrybq${x}" rule="1,2,3,4,-"/>
+		<@x_inputsuggest field="bzqtzd2${x}" dickey="1" rule="bzqtzdjbbm2${x}"/>
+		<@x_inputtext field="bzqtzdjbbm2${x}" />
+		<@x_combo field="bzqtzdrybq2${x}" rule="1,2,3,4,-"/>
+	</#list>
+	<@x_inputsuggest field="BZSSHZDDWBYS" dicKey="4" rule="bzsshzdjbbm"/>
+	//<@x_inputtext field="BZSSHZDDWBYS" />
+	<@x_inputtext field="bzsshzdjbbm" />
+	
+	<@x_inputsuggest field="BZBLZD" dickey="1" rule="bzblzdjbbm"/>
+	//<@x_inputtext field="BZBLZD" />
+	<@x_inputtext field="bzblzdjbbm" />
+	<@x_inputtext field="input1"/>
+	<@x_inputtext field="bzblzdblh" />
+	<@x_inputtext field="BZGMYWMC" />
+	<@x_inputtext field="BZKZRXM" />
+	<@x_inputtext field="BZZRYSXM" />
+	<@x_inputtext field="BZYYSXM"  defaultValue="patient.doctorname" />
+	<@x_inputtext field="BZJXYSXM" />
+	<@x_inputtext field="BZSXYSXM" />
+	<@x_inputtext field="BZBMY" />
+	<@x_inputtext field="BZZKYS" />
+	<@x_inputtext field="BZZKHS" />
+	<@x_inputtext field="year_zkrq" />
+	<@x_inputtext field="month_zkrq" />
+	<@x_inputtext field="day_zkrq" />
+	<#list 1..4 as x>
+		<@x_inputsuggest field="bzssczmc${x}" dicKey="2" rule="bzssczbm${x}" />
+		<@x_inputtext field="bzssczbm${x}"  />
+		<@x_inputtext field="bzssczrq${x}" rule="yyyy-MM-dd"/>
+		<@x_combo field="bzssjb${x}" rule="1,2,3,4,-"/>
+		<@x_inputtext field="bzsssz${x}" />
+		<@x_inputtext field="bzsszs1${x}" />
+		<@x_inputtext field="bzsszs2${x}" />
+		<@x_combo field="bzssqkyhdj${x}" rule="Ⅰ/甲,Ⅰ/乙,Ⅰ/丙,Ⅰ/其他,Ⅱ/甲,Ⅱ/乙,Ⅱ/丙,Ⅱ/其他,Ⅲ/甲,Ⅲ/乙,Ⅲ/丙,Ⅲ/其他,零切口"/>
+		<@x_combo field="bzssmzfs${x}" rule="基础麻醉,局部浸润麻醉,神经阻滞麻醉,腰麻,硬膜外阻滞,腰麻硬膜外联合阻滞,静脉全身麻醉,吸入全身麻醉,静吸符合全身麻醉,支气管内麻醉,其他"/>
+		<@x_inputtext field="bzssmzys${x}" />
+	</#list>
+	<@x_inputtext field="bzyzzyjgmc" />
+	<@x_inputtext field="bzzsqhxzwsyjgmc" />
+	<@x_inputtext field="bzzzyjhmd" />
+	<@x_inputtext field="days_ryqhm" />
+	<@x_inputtext field="hours_ryqhm" />
+	<@x_inputtext field="minutes_ryqhm" />
+	<@x_inputtext field="days_ryhhm" />
+	<@x_inputtext field="hours_ryhhm" />
+	<@x_inputtext field="minutes_ryhhm" />
+	<@x_inputtext field="BZFYZJ"/>
+	
+	<@x_combo field="zgzdyj" rule="1.病理,2.手术,3.内镜,4.血管造影,5.MR,6.CT,7.X线,8.超声,9.心电图,10.临床检验（生化、免疫）,11.临床表现,19其他"/>
+	
+	<@x_inputtext field="tjhl" />
+	<@x_inputtext field="yjhl" />
+	<@x_inputtext field="ejhl" />
+	<@x_inputtext field="sjhl" />
+	
+	<@x_inputtext field="bzfyzjzjje" />
+	<@x_inputtext field="bzfyybylf" />
+	<@x_inputtext field="bzfyybczf" />
+	<@x_inputtext field="BZHLF"/>
+	<@x_inputtext field="bzzhylqtfy"/>
+	<@x_inputtext field="bzfyblzdf"/>
+	<@x_inputtext field="bzfysyszdf" />
+	<@x_inputtext field="bzfyyxxzdf" />
+	<@x_inputtext field="bzfylczdf" />
+	<@x_inputtext field="bzfyfsszlf" />
+	<@x_inputtext field="bzfylcwlzlf" />
+	<@x_inputtext field="bzfysszlf" />
+	<@x_inputtext field="bzfymzf" />
+	<@x_inputtext field="icdbh" />
+	<@x_inputtext field="bzfyssf"/>
+	<@x_inputtext field="bzfykff" />
+	<@x_inputtext field="bzfyzyzlf"/>
+	<@x_inputtext field="BZXYF"/>
+	<@x_inputtext field="bzfykjywf" />
+	<@x_inputtext field="BZZCY1"/>
+	<@x_inputtext field="BZZCY2"/>
+	<@x_inputtext field="bzfyxf" />
+	<@x_inputtext field="bzfydblzpf" />
+	<@x_inputtext field="bzfyqdblzpf" />
+	<@x_inputtext field="bzfynxyzlzpf" />
+	<@x_inputtext field="bzfyxbyzlzpf" />
+	<@x_inputtext field="bzfyjcyycxclf"/>
+	<@x_inputtext field="bzfyzlyycxclf" />
+	<@x_inputtext field="bzfyssyycxclf" />
+	<@x_inputtext field="BZQTFY"/>
+	<@x_combo field="rjqk"  defaultValue="1" dicKey="188"/>
+	<@x_combo field="wcqk"  defaultValue="1" dicKey="188"/>
+	<@x_combo field="byqk"  defaultValue="1" dicKey="188"/>
+	<@x_combo field="BZYLFFFS"  rule="1.城镇职工基本医疗保险,2.城镇居民基本医疗保险,3.新型农村合作医疗,4.贫困救助,5.商业医疗保险,6.全公费,7.全自费,8.其他社会保险,9.其他" />
+	       
+	<@x_combo field="BZXBDM" defaultValue="patient.sexcode" dicKey="188"/>
+	<@x_combo field="BMHYZKLBDM" defaultValue="patient.maritalstatuscode" rule="1,2,3,4,9,-"/>
+	<@x_combo field="patSource" defaultValue="patient.patsourcecode" rule="1,2,3,9,-"/>
+	<@x_combo field="bzywgm"  dicKey="188"/>
+	<@x_combo field="BZSJ"  dicKey="188"/>
+	<@x_combo field="BZABOXX"  dicKey="190"/>
+	<@x_combo field="BZRHXX"  rule="1,2,3,4,-"/>
+	<@x_combo field="BZBAZL"   dicKey="189"/>
+	<@x_combo field="bzlyfs"  defaultValue="1" rule="1,2,3,4,5,9,-"/>
+	<@x_combo field="bzzzyjh"  defaultValue="1" dicKey="188"/>
+	<@x_checkbox field="singleDiseaseManagement" multiSelect="false"/>
+	<@x_checkbox field="clinicalPathwayManagement" multiSelect="false"/>
+	<@x_combo field="outpatientAndInpatient"  rule="0,1,2,3,-"/>
+	<@x_combo field="admissionAndDischarge"  rule="0,1,2,3,-"/>
+	<@x_combo field="preoperativeAndPostoperative"  rule="0,1,2,3,-"/>
+	<@x_combo field="clinicalAndPathological"  rule="0,1,2,3,-"/>
+	<@x_combo field="radiologyAndPathology"  rule="0,1,2,3,-"/>
+	<@x_inputtext field="rescueNum" />
+	<@x_inputtext field="rescueSuccessNum" />
+	<@x_checkbox field="outcome" multiSelect="false"/>
+	
+});
+function calculateCost(){
+	$.ajax({
+		async: false,
+		type: "GET",
+		url: "emr/calculateCost.htm?inpno="+$("#inpno").val()+"&time="+new Date().getMilliseconds(),
+		dataType: "json",
+		error:function(){
+            alert("服务器内部错误！");
+        },
+		success: function(data){
+			if(data!=null){
+				if(data[0].zfy==null){
+					alert("请在病人出院后再计算费用！")
+				}else{
+					$("#BZFYZJ").val(data[0].zfy);
+					$("#bzfyzjzjje").val(data[0].zfje);
+					$("#bzfyybylf").val(data[0].ybylfw);
+					$("#bzfyybczf").val(data[0].ybzlczf);
+					$("#BZHLF").val(data[0].hlf);
+					$("#bzzhylqtfy").val(data[0].qtfy);
+					$("#bzfyblzdf").val(data[0].blzd);
+					$("#bzfysyszdf").val(data[0].syszd);
+					$("#bzfyyxxzdf").val(data[0].yxzd);
+					$("#bzfylczdf").val(data[0].lczdxm);
+					$("#bzfyfsszlf").val(data[0].fsszlxm);
+					$("#bzfylcwlzlf").val(data[0].lcwlzl);
+					$("#bzfysszlf").val(data[0].sszlf);
+					$("#bzfymzf").val(data[0].mzf);
+					$("#bzfyssf").val(data[0].ssf);
+					$("#bzfykff").val(data[0].kfl);
+					$("#bzfyzyzlf").val(data[0].zyzlf);
+					$("#BZXYF").val(data[0].xyf);
+					$("#BZZCY2").val(data[0].zcaoy);
+					$("#BZZCY1").val(data[0].zchengy);
+					$("#bzfyxf").val(data[0].sxf);
+					$("#bzfyjcyycxclf").val(data[0].clf);
+					$("#BZQTFY").val(data[0].qtf);
+					$("#bzfykjywf").val(data[0].kjy);
+					
+					//$("#tjhl").val(data[0].tjhlts);
+					//$("#yjhl").val(data[0].yjhlts);
+					//$("#ejhl").val(data[0].ejhlts);
+					//$("#sjhl").val(data[0].sjhlts);
+				}
+			}else{
+				alert("未成功计算出费用信息！");
+			}
+			
+  		}
+	});
+}
+
+window.setTimeout(function(){
+	$(".autowidth").blur(function(){
+		if((this.value.length>11) && (this.value.length<=14)){
+			$(this).css("fontSize","12px");
+		}else if(this.value.length>14){
+			$(this).css("fontSize","10px");
+		}else{
+			$(this).css("fontSize","14px");
+		}
+	});
+},5000);
+ 
+
+</script>

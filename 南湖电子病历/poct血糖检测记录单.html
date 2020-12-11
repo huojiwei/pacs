@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            width: 97%;
+            text-align: center;
+        }
+        td{
+            height: 25px;
+            border-left: 1px solid #000;
+            border-top: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">POCT血糖检测记录单</div>
+    <table width="650" border="0" cellspacing="0" cellpadding="0" class="jshl01">
+        <tr>
+            <td style="border: none;">
+                床号:
+                <input type="text" name="cbedno" id="cbedno" style="width: 50px;">
+            </td style="border: none;">
+            <td style="border: none;">
+                姓名:
+                <input type="text" name="patnam" id="patnam" style="width: 100px;"/>
+            </td style="border: none;">
+            <td style="border: none;">
+                住院号:
+                <input type="text" name="inpno" id="inpno" class="txt11" style="width: 100px;"/>
+            </td style="border: none;">
+            <td style="border: none;">
+                单位:mmol/L
+            </td>
+            
+        </tr>
+
+    </table>
+    <table width="650" style="border-bottom: 1px solid #000; border-right: 1px solid #000;" cellspacing="0" cellpadding="0"  class="jshl01">
+        <tr>
+            <td style="width: 80px;text-align: center;">日期</td>
+            <td style="width: 60px; text-align: center;">时间</td>
+            <td style="text-align: center;">血糖</td>
+            <td style="width: 90px; text-align: center;">签名</td>
+            <td style="width: 80px; text-align: center;">日期</td>
+            <td style="width: 60px; text-align: center;">时间</td>
+            <td style="text-align: center;">血糖</td>
+            <td style="width: 90px; text-align: center;">签名</td>
+        </tr>
+        <tr>
+            <td><input type="text" name="riqi01" id="riqi01"></td>
+            <td><input type="text" name="time01" id="time01"></td>
+            <td><input type="text" name="xuet01" id="xuet01"></td>
+            <td><input type="text" name="name01" id="name01"></td>
+            <td><input type="text" name="riqi02" id="riqi02"></td>
+            <td><input type="text" name="time02" id="time02"></td>
+            <td><input type="text" name="xuet02" id="xuet02"></td>
+            <td><input type="text" name="name02" id="name02"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="riqi03" id="riqi03"></td>
+            <td><input type="text" name="time03" id="time03"></td>
+            <td><input type="text" name="xuet03" id="xuet03"></td>
+            <td><input type="text" name="name03" id="name03"></td>
+            <td><input type="text" name="riqi04" id="riqi04"></td>
+            <td><input type="text" name="time04" id="time04"></td>
+            <td><input type="text" name="xuet04" id="xuet04"></td>
+            <td><input type="text" name="name04" id="name04"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="riqi05" id="riqi05"></td>
+            <td><input type="text" name="time05" id="time05"></td>
+            <td><input type="text" name="xuet05" id="xuet05"></td>
+            <td><input type="text" name="name05" id="name05"></td>
+            <td><input type="text" name="riqi06" id="riqi06"></td>
+            <td><input type="text" name="time06" id="time06"></td>
+            <td><input type="text" name="xuet06" id="xuet06"></td>
+            <td><input type="text" name="name06" id="name06"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="riqi07" id="riqi07"></td>
+            <td><input type="text" name="time07" id="time07"></td>
+            <td><input type="text" name="xuet07" id="xuet07"></td>
+            <td><input type="text" name="name07" id="name07"></td>
+            <td><input type="text" name="riqi08" id="riqi08"></td>
+            <td><input type="text" name="time08" id="time08"></td>
+            <td><input type="text" name="xuet08" id="xuet08"></td>
+            <td><input type="text" name="name08" id="name08"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="riqi09" id="riqi09"></td>
+            <td><input type="text" name="time09" id="time09"></td>
+            <td><input type="text" name="xuet09" id="xuet09"></td>
+            <td><input type="text" name="name09" id="name09"></td>
+            <td><input type="text" name="riqi10" id="riqi10"></td>
+            <td><input type="text" name="time10" id="time10"></td>
+            <td><input type="text" name="xuet10" id="xuet10"></td>
+            <td><input type="text" name="name10" id="name10"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="riqi11" id="riqi11"></td>
+            <td><input type="text" name="time11" id="time11"></td>
+            <td><input type="text" name="xuet11" id="xuet11"></td>
+            <td><input type="text" name="name11" id="name11"></td>
+            <td><input type="text" name="riqi12" id="riqi12"></td>
+            <td><input type="text" name="time12" id="time12"></td>
+            <td><input type="text" name="xuet12" id="xuet12"></td>
+            <td><input type="text" name="name12" id="name12"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="riqi13" id="riqi13"></td>
+            <td><input type="text" name="time13" id="time13"></td>
+            <td><input type="text" name="xuet13" id="xuet13"></td>
+            <td><input type="text" name="name13" id="name13"></td>
+            <td><input type="text" name="riqi14" id="riqi14"></td>
+            <td><input type="text" name="time14" id="time14"></td>
+            <td><input type="text" name="xuet14" id="xuet14"></td>
+            <td><input type="text" name="name14" id="name14"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="riqi15" id="riqi15"></td>
+            <td><input type="text" name="time15" id="time15"></td>
+            <td><input type="text" name="xuet15" id="xuet15"></td>
+            <td><input type="text" name="name15" id="name15"></td>
+            <td><input type="text" name="riqi16" id="riqi16"></td>
+            <td><input type="text" name="time16" id="time16"></td>
+            <td><input type="text" name="xuet16" id="xuet16"></td>
+            <td><input type="text" name="name16" id="name16"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="riqi17" id="riqi17"></td>
+            <td><input type="text" name="time17" id="time17"></td>
+            <td><input type="text" name="xuet17" id="xuet17"></td>
+            <td><input type="text" name="name17" id="name17"></td>
+            <td><input type="text" name="riqi18" id="riqi18"></td>
+            <td><input type="text" name="time18" id="time18"></td>
+            <td><input type="text" name="xuet18" id="xuet18"></td>
+            <td><input type="text" name="name18" id="name18"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="riqi19" id="riqi19"></td>
+            <td><input type="text" name="time19" id="time19"></td>
+            <td><input type="text" name="xuet19" id="xuet19"></td>
+            <td><input type="text" name="name19" id="name19"></td>
+            <td><input type="text" name="riqi20" id="riqi20"></td>
+            <td><input type="text" name="time20" id="time20"></td>
+            <td><input type="text" name="xuet20" id="xuet20"></td>
+            <td><input type="text" name="name20" id="name20"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="riqi21" id="riqi21"></td>
+            <td><input type="text" name="time21" id="time21"></td>
+            <td><input type="text" name="xuet21" id="xuet21"></td>
+            <td><input type="text" name="name21" id="name21"></td>
+            <td><input type="text" name="riqi22" id="riqi22"></td>
+            <td><input type="text" name="time22" id="time22"></td>
+            <td><input type="text" name="xuet22" id="xuet22"></td>
+            <td><input type="text" name="name22" id="name22"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="riqi23" id="riqi23"></td>
+            <td><input type="text" name="time23" id="time23"></td>
+            <td><input type="text" name="xuet23" id="xuet23"></td>
+            <td><input type="text" name="name23" id="name23"></td>
+            <td><input type="text" name="riqi24" id="riqi24"></td>
+            <td><input type="text" name="time24" id="time24"></td>
+            <td><input type="text" name="xuet24" id="xuet24"></td>
+            <td><input type="text" name="name24" id="name24"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="riqi25" id="riqi25"></td>
+            <td><input type="text" name="time25" id="time25"></td>
+            <td><input type="text" name="xuet25" id="xuet25"></td>
+            <td><input type="text" name="name25" id="name25"></td>
+            <td><input type="text" name="riqi26" id="riqi26"></td>
+            <td><input type="text" name="time26" id="time26"></td>
+            <td><input type="text" name="xuet26" id="xuet26"></td>
+            <td><input type="text" name="name26" id="name26"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="riqi27" id="riqi27"></td>
+            <td><input type="text" name="time27" id="time27"></td>
+            <td><input type="text" name="xuet27" id="xuet27"></td>
+            <td><input type="text" name="name27" id="name27"></td>
+            <td><input type="text" name="riqi28" id="riqi28"></td>
+            <td><input type="text" name="time28" id="time28"></td>
+            <td><input type="text" name="xuet28" id="xuet28"></td>
+            <td><input type="text" name="name28" id="name28"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="riqi29" id="riqi29"></td>
+            <td><input type="text" name="time29" id="time29"></td>
+            <td><input type="text" name="xuet29" id="xuet29"></td>
+            <td><input type="text" name="name29" id="name29"></td>
+            <td><input type="text" name="riqi30" id="riqi30"></td>
+            <td><input type="text" name="time30" id="time30"></td>
+            <td><input type="text" name="xuet30" id="xuet30"></td>
+            <td><input type="text" name="name30" id="name30"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="riqi31" id="riqi31"></td>
+            <td><input type="text" name="time31" id="time31"></td>
+            <td><input type="text" name="xuet31" id="xuet31"></td>
+            <td><input type="text" name="name31" id="name31"></td>
+            <td><input type="text" name="riqi32" id="riqi32"></td>
+            <td><input type="text" name="time32" id="time32"></td>
+            <td><input type="text" name="xuet32" id="xuet32"></td>
+            <td><input type="text" name="name32" id="name32"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="riqi33" id="riqi33"></td>
+            <td><input type="text" name="time33" id="time33"></td>
+            <td><input type="text" name="xuet33" id="xuet33"></td>
+            <td><input type="text" name="name33" id="name33"></td>
+            <td><input type="text" name="riqi34" id="riqi34"></td>
+            <td><input type="text" name="time34" id="time34"></td>
+            <td><input type="text" name="xuet34" id="xuet34"></td>
+            <td><input type="text" name="name34" id="name34"></td>
+        </tr><tr>
+            <td><input type="text" name="riqi35" id="riqi35"></td>
+            <td><input type="text" name="time35" id="time35"></td>
+            <td><input type="text" name="xuet35" id="xuet35"></td>
+            <td><input type="text" name="name35" id="name35"></td>
+            <td><input type="text" name="riqi36" id="riqi36"></td>
+            <td><input type="text" name="time36" id="time36"></td>
+            <td><input type="text" name="xuet36" id="xuet36"></td>
+            <td><input type="text" name="name36" id="name36"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="riqi37" id="riqi37"></td>
+            <td><input type="text" name="time37" id="time37"></td>
+            <td><input type="text" name="xuet37" id="xuet37"></td>
+            <td><input type="text" name="name37" id="name37"></td>
+            <td><input type="text" name="riqi38" id="riqi38"></td>
+            <td><input type="text" name="time38" id="time38"></td>
+            <td><input type="text" name="xuet38" id="xuet38"></td>
+            <td><input type="text" name="name38" id="name38"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="riqi39" id="riqi39"></td>
+            <td><input type="text" name="time39" id="time39"></td>
+            <td><input type="text" name="xuet39" id="xuet39"></td>
+            <td><input type="text" name="name39" id="name39"></td>
+            <td><input type="text" name="riqi40" id="riqi40"></td>
+            <td><input type="text" name="time40" id="time40"></td>
+            <td><input type="text" name="xuet40" id="xuet40"></td>
+            <td><input type="text" name="name40" id="name40"></td>
+        </tr>
+
+        <tr>
+            <td><input type="text" name="riqi41" id="riqi41"></td>
+            <td><input type="text" name="time41" id="time41"></td>
+            <td><input type="text" name="xuet41" id="xuet41"></td>
+            <td><input type="text" name="name41" id="name41"></td>
+            <td><input type="text" name="riqi42" id="riqi42"></td>
+            <td><input type="text" name="time42" id="time42"></td>
+            <td><input type="text" name="xuet42" id="xuet42"></td>
+            <td><input type="text" name="name42" id="name42"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="riqi43" id="riqi43"></td>
+            <td><input type="text" name="time43" id="time43"></td>
+            <td><input type="text" name="xuet43" id="xuet43"></td>
+            <td><input type="text" name="name43" id="name43"></td>
+            <td><input type="text" name="riqi44" id="riqi44"></td>
+            <td><input type="text" name="time44" id="time44"></td>
+            <td><input type="text" name="xuet44" id="xuet44"></td>
+            <td><input type="text" name="name44" id="name44"></td>
+        </tr><tr>
+            <td><input type="text" name="riqi45" id="riqi45"></td>
+            <td><input type="text" name="time45" id="time45"></td>
+            <td><input type="text" name="xuet45" id="xuet45"></td>
+            <td><input type="text" name="name45" id="name45"></td>
+            <td><input type="text" name="riqi46" id="riqi46"></td>
+            <td><input type="text" name="time46" id="time46"></td>
+            <td><input type="text" name="xuet46" id="xuet46"></td>
+            <td><input type="text" name="name46" id="name46"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="riqi47" id="riqi47"></td>
+            <td><input type="text" name="time47" id="time47"></td>
+            <td><input type="text" name="xuet47" id="xuet47"></td>
+            <td><input type="text" name="name47" id="name47"></td>
+            <td><input type="text" name="riqi48" id="riqi48"></td>
+            <td><input type="text" name="time48" id="time48"></td>
+            <td><input type="text" name="xuet48" id="xuet48"></td>
+            <td><input type="text" name="name48" id="name48"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="riqi49" id="riqi49"></td>
+            <td><input type="text" name="time49" id="time49"></td>
+            <td><input type="text" name="xuet49" id="xuet49"></td>
+            <td><input type="text" name="name49" id="name49"></td>
+            <td><input type="text" name="riqi50" id="riqi50"></td>
+            <td><input type="text" name="time50" id="time50"></td>
+            <td><input type="text" name="xuet50" id="xuet50"></td>
+            <td><input type="text" name="name50" id="name50"></td>
+        </tr>
+
+        <tr>
+            <td><input type="text" name="riqi51" id="riqi51"></td>
+            <td><input type="text" name="time51" id="time51"></td>
+            <td><input type="text" name="xuet51" id="xuet51"></td>
+            <td><input type="text" name="name51" id="name51"></td>
+            <td><input type="text" name="riqi52" id="riqi52"></td>
+            <td><input type="text" name="time52" id="time52"></td>
+            <td><input type="text" name="xuet52" id="xuet52"></td>
+            <td><input type="text" name="name52" id="name52"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="riqi53" id="riqi53"></td>
+            <td><input type="text" name="time53" id="time53"></td>
+            <td><input type="text" name="xuet53" id="xuet53"></td>
+            <td><input type="text" name="name53" id="name53"></td>
+            <td><input type="text" name="riqi54" id="riqi54"></td>
+            <td><input type="text" name="time54" id="time54"></td>
+            <td><input type="text" name="xuet54" id="xuet54"></td>
+            <td><input type="text" name="name54" id="name54"></td>
+        </tr><tr>
+            <td><input type="text" name="riqi55" id="riqi55"></td>
+            <td><input type="text" name="time55" id="time55"></td>
+            <td><input type="text" name="xuet55" id="xuet55"></td>
+            <td><input type="text" name="name55" id="name55"></td>
+            <td><input type="text" name="riqi56" id="riqi56"></td>
+            <td><input type="text" name="time56" id="time56"></td>
+            <td><input type="text" name="xuet56" id="xuet56"></td>
+            <td><input type="text" name="name56" id="name56"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="riqi57" id="riqi57"></td>
+            <td><input type="text" name="time57" id="time57"></td>
+            <td><input type="text" name="xuet57" id="xuet57"></td>
+            <td><input type="text" name="name57" id="name57"></td>
+            <td><input type="text" name="riqi58" id="riqi58"></td>
+            <td><input type="text" name="time58" id="time58"></td>
+            <td><input type="text" name="xuet58" id="xuet58"></td>
+            <td><input type="text" name="name58" id="name58"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="riqi59" id="riqi59"></td>
+            <td><input type="text" name="time59" id="time59"></td>
+            <td><input type="text" name="xuet59" id="xuet59"></td>
+            <td><input type="text" name="name59" id="name59"></td>
+            <td><input type="text" name="riqi60" id="riqi60"></td>
+            <td><input type="text" name="time60" id="time60"></td>
+            <td><input type="text" name="xuet60" id="xuet60"></td>
+            <td><input type="text" name="name60" id="name60"></td>
+        </tr>
+    </table>
+    <script type="text/javascript">
+        $(function(){
+        <@x_inputtext field="patnam" defaultValue="patient.patname"/>
+        <@x_inputtext field="cbedno" defaultValue="patient.cbedno"/>
+        <@x_inputtext field="inpno" defaultValue="patient.inpno"/>
+        <@x_inputtext field="riqi01" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi02" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi03" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi04" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi05" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi06" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi07" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi08" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi09" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi10" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi11" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi12" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi13" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi14" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi15" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi16" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi17" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi18" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi19" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi20" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi21" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi22" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi23" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi24" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi25" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi26" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi27" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi28" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi29" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi30" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi31" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi32" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi33" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi34" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi35" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi36" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi37" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi38" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi39" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi40" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi41" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi42" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi43" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi44" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi45" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi46" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi47" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi48" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi49" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi50" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi51" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi52" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi53" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi54" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi55" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi56" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi57" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi58" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi59" rule="yyyy-MM-dd"/>
+        <@x_inputtext field="riqi60" rule="yyyy-MM-dd"/>
+
+        <@x_inputtext field="time01" rule="HH:mm"/>
+        <@x_inputtext field="time02" rule="HH:mm"/>
+        <@x_inputtext field="time03" rule="HH:mm"/>
+        <@x_inputtext field="time04" rule="HH:mm"/>
+        <@x_inputtext field="time05" rule="HH:mm"/>
+        <@x_inputtext field="time06" rule="HH:mm"/>
+        <@x_inputtext field="time07" rule="HH:mm"/>
+        <@x_inputtext field="time08" rule="HH:mm"/>
+        <@x_inputtext field="time09" rule="HH:mm"/>
+        <@x_inputtext field="time10" rule="HH:mm"/>
+        <@x_inputtext field="time11" rule="HH:mm"/>
+        <@x_inputtext field="time12" rule="HH:mm"/>
+        <@x_inputtext field="time13" rule="HH:mm"/>
+        <@x_inputtext field="time14" rule="HH:mm"/>
+        <@x_inputtext field="time15" rule="HH:mm"/>
+        <@x_inputtext field="time16" rule="HH:mm"/>
+        <@x_inputtext field="time17" rule="HH:mm"/>
+        <@x_inputtext field="time18" rule="HH:mm"/>
+        <@x_inputtext field="time19" rule="HH:mm"/>
+        <@x_inputtext field="time20" rule="HH:mm"/>
+        <@x_inputtext field="time21" rule="HH:mm"/>
+        <@x_inputtext field="time22" rule="HH:mm"/>
+        <@x_inputtext field="time23" rule="HH:mm"/>
+        <@x_inputtext field="time24" rule="HH:mm"/>
+        <@x_inputtext field="time25" rule="HH:mm"/>
+        <@x_inputtext field="time26" rule="HH:mm"/>
+        <@x_inputtext field="time27" rule="HH:mm"/>
+        <@x_inputtext field="time28" rule="HH:mm"/>
+        <@x_inputtext field="time29" rule="HH:mm"/>
+        <@x_inputtext field="time30" rule="HH:mm"/>
+        <@x_inputtext field="time31" rule="HH:mm"/>
+        <@x_inputtext field="time32" rule="HH:mm"/>
+        <@x_inputtext field="time33" rule="HH:mm"/>
+        <@x_inputtext field="time34" rule="HH:mm"/>
+        <@x_inputtext field="time35" rule="HH:mm"/>
+        <@x_inputtext field="time36" rule="HH:mm"/>
+        <@x_inputtext field="time37" rule="HH:mm"/>
+        <@x_inputtext field="time38" rule="HH:mm"/>
+        <@x_inputtext field="time39" rule="HH:mm"/>
+        <@x_inputtext field="time40" rule="HH:mm"/>
+        <@x_inputtext field="time41" rule="HH:mm"/>
+        <@x_inputtext field="time42" rule="HH:mm"/>
+        <@x_inputtext field="time43" rule="HH:mm"/>
+        <@x_inputtext field="time44" rule="HH:mm"/>
+        <@x_inputtext field="time45" rule="HH:mm"/>
+        <@x_inputtext field="time46" rule="HH:mm"/>
+        <@x_inputtext field="time47" rule="HH:mm"/>
+        <@x_inputtext field="time48" rule="HH:mm"/>
+        <@x_inputtext field="time49" rule="HH:mm"/>
+        <@x_inputtext field="time50" rule="HH:mm"/>
+        <@x_inputtext field="time51" rule="HH:mm"/>
+        <@x_inputtext field="time52" rule="HH:mm"/>
+        <@x_inputtext field="time53" rule="HH:mm"/>
+        <@x_inputtext field="time54" rule="HH:mm"/>
+        <@x_inputtext field="time55" rule="HH:mm"/>
+        <@x_inputtext field="time56" rule="HH:mm"/>
+        <@x_inputtext field="time57" rule="HH:mm"/>
+        <@x_inputtext field="time58" rule="HH:mm"/>
+        <@x_inputtext field="time59" rule="HH:mm"/>
+        <@x_inputtext field="time60" rule="HH:mm"/>
+
+        <@x_inputtext field="xuet01" />
+        <@x_inputtext field="xuet02" />
+        <@x_inputtext field="xuet03" />
+        <@x_inputtext field="xuet04" />
+        <@x_inputtext field="xuet05" />
+        <@x_inputtext field="xuet06" />
+        <@x_inputtext field="xuet07" />
+        <@x_inputtext field="xuet08" />
+        <@x_inputtext field="xuet09" />
+        <@x_inputtext field="xuet10" />
+        <@x_inputtext field="xuet11" />
+        <@x_inputtext field="xuet12" />
+        <@x_inputtext field="xuet13" />
+        <@x_inputtext field="xuet14" />
+        <@x_inputtext field="xuet15" />
+        <@x_inputtext field="xuet16" />
+        <@x_inputtext field="xuet17" />
+        <@x_inputtext field="xuet18" />
+        <@x_inputtext field="xuet19" />
+        <@x_inputtext field="xuet20" />
+        <@x_inputtext field="xuet21" />
+        <@x_inputtext field="xuet22" />
+        <@x_inputtext field="xuet23" />
+        <@x_inputtext field="xuet24" />
+        <@x_inputtext field="xuet25" />
+        <@x_inputtext field="xuet26" />
+        <@x_inputtext field="xuet27" />
+        <@x_inputtext field="xuet28" />
+        <@x_inputtext field="xuet29" />
+        <@x_inputtext field="xuet30" />
+        <@x_inputtext field="xuet31" />
+        <@x_inputtext field="xuet32" />
+        <@x_inputtext field="xuet33" />
+        <@x_inputtext field="xuet34" />
+        <@x_inputtext field="xuet35" />
+        <@x_inputtext field="xuet36" />
+        <@x_inputtext field="xuet37" />
+        <@x_inputtext field="xuet38" />
+        <@x_inputtext field="xuet39" />
+        <@x_inputtext field="xuet40" />
+        <@x_inputtext field="xuet41" />
+        <@x_inputtext field="xuet42" />
+        <@x_inputtext field="xuet43" />
+        <@x_inputtext field="xuet44" />
+        <@x_inputtext field="xuet45" />
+        <@x_inputtext field="xuet46" />
+        <@x_inputtext field="xuet47" />
+        <@x_inputtext field="xuet48" />
+        <@x_inputtext field="xuet49" />
+        <@x_inputtext field="xuet50" />
+        <@x_inputtext field="xuet51" />
+        <@x_inputtext field="xuet52" />
+        <@x_inputtext field="xuet53" />
+        <@x_inputtext field="xuet54" />
+        <@x_inputtext field="xuet55" />
+        <@x_inputtext field="xuet56" />
+        <@x_inputtext field="xuet57" />
+        <@x_inputtext field="xuet58" />
+        <@x_inputtext field="xuet59" />
+        <@x_inputtext field="xuet60" />
+
+        <@x_inputtext field="name01" />
+        <@x_inputtext field="name02" />
+        <@x_inputtext field="name03" />
+        <@x_inputtext field="name04" />
+        <@x_inputtext field="name05" />
+        <@x_inputtext field="name06" />
+        <@x_inputtext field="name07" />
+        <@x_inputtext field="name08" />
+        <@x_inputtext field="name09" />
+        <@x_inputtext field="name10" />
+        <@x_inputtext field="name11" />
+        <@x_inputtext field="name12" />
+        <@x_inputtext field="name13" />
+        <@x_inputtext field="name14" />
+        <@x_inputtext field="name15" />
+        <@x_inputtext field="name16" />
+        <@x_inputtext field="name17" />
+        <@x_inputtext field="name18" />
+        <@x_inputtext field="name19" />
+        <@x_inputtext field="name20" />
+        <@x_inputtext field="name21" />
+        <@x_inputtext field="name22" />
+        <@x_inputtext field="name23" />
+        <@x_inputtext field="name24" />
+        <@x_inputtext field="name25" />
+        <@x_inputtext field="name26" />
+        <@x_inputtext field="name27" />
+        <@x_inputtext field="name28" />
+        <@x_inputtext field="name29" />
+        <@x_inputtext field="name30" />
+        <@x_inputtext field="name31" />
+        <@x_inputtext field="name32" />
+        <@x_inputtext field="name33" />
+        <@x_inputtext field="name34" />
+        <@x_inputtext field="name35" />
+        <@x_inputtext field="name36" />
+        <@x_inputtext field="name37" />
+        <@x_inputtext field="name38" />
+        <@x_inputtext field="name39" />
+        <@x_inputtext field="name40" />
+        <@x_inputtext field="name41" />
+        <@x_inputtext field="name42" />
+        <@x_inputtext field="name43" />
+        <@x_inputtext field="name44" />
+        <@x_inputtext field="name45" />
+        <@x_inputtext field="name46" />
+        <@x_inputtext field="name47" />
+        <@x_inputtext field="name48" />
+        <@x_inputtext field="name49" />
+        <@x_inputtext field="name50" />
+        <@x_inputtext field="name51" />
+        <@x_inputtext field="name52" />
+        <@x_inputtext field="name53" />
+        <@x_inputtext field="name54" />
+        <@x_inputtext field="name55" />
+        <@x_inputtext field="name56" />
+        <@x_inputtext field="name57" />
+        <@x_inputtext field="name58" />
+        <@x_inputtext field="name59" />
+        <@x_inputtext field="name60" />
+       
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+	<div class="box2">${BZZYJGMC}</div>
+    <div class="box11">危重护理记录单 </div>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="jshl01">
+      <tr>
+        <td align="center"> 科别
+          <input type="text" name="dept" id="dept" class="txt110px"/>
+          床号
+          <input type="text" name="bedno" id="bedno" class="txt30px"/>
+          姓名
+          <input type="text" name="name" id="name" class="txt80px"/>
+          住院号
+          <input type="text" name="BZBAH" id="BZBAH" class="txt80px"/>
+          诊断
+         <input type="text" name="diagname" id="diagname" class="txt320px" />
+		 第
+		 <input type="text" name="ye" id="ye" class="txt30px" />
+		 页
+		 </td>
+		</tr>
+    </table>
+    <table width="100%" border="0" cellspacing="1" cellpadding="0" class="jshl02 jshl04 jshl05">
+      <tr>
+        <td width="2%" rowspan="2">日期</td>
+        <td width="3%" rowspan="2">时间</td>
+        <td width="3%" rowspan="2">意识</td>
+        <td width="3%">体温</td>
+        <td width="3%">脉搏</td>
+        <td width="3%">呼吸</td>
+        <td width="8%">血压</td>
+        <td width="4%">心率</td>
+        <td width="8%">瞳孔</td>
+        <td width="3%" rowspan="2">对光反应</td>
+        <td width="3%" rowspan="2" style="writing-mode:tb-rl;text-align:center;">血氧饱和度%</td>
+        <td width="9%" colspan="2">入量（ml）</td>
+        <td  width="15%"colspan="3">出量（ml）</td>
+        <td width="3%" rowspan="2" style="writing-mode:tb-rl;text-align:center;">留置针处红肿
+    </td>
+        <td width="3%" rowspan="2" style="writing-mode:tb-rl;text-align:center;">吸氧升\分</td>
+        <td width="3%" rowspan="2">基础护理</td>
+        <td rowspan="2" >病情观察与护理</td>
+        <td width="6%" rowspan="2">护士签名</td>
+      </tr>
+      <tr>
+        <td>℃</td>
+        <td>次/分</td>
+        <td>次/分</td>
+        <td>mmHg</td>
+        <td>次/分</td>
+        <td>左/右</td>
+        <td width="3%">名称</td>
+        <td width="6%">量</td>
+        <td width="3%">名称</td>
+        <td width="6%">量</td>
+        <td width="5%">颜色性状</td>
+      </tr>
+
+	  <#list 1..11 as x>      
+      <tr>
+        <td><input name="date${x}" id="date${x}" style="text-align:center;"   type="text" class="txt30px" /></td>
+        <td><input name="time${x}" id="time${x}" style="text-align:center;"  type="text" class="txt30px" /></td>
+        <td><input name="awareness${x}" id="awareness${x}" style="text-align:center;"   type="text" class="txt40px" /></td>
+        <td><input name="temperature${x}" id="temperature${x}" style="text-align:center;"  type="text" class="txt20px"/></td>
+        <td><input name="pulse${x}" id="pulse${x}" style="text-align:center;"  type="text" class="txt25px" /></td>
+        <td><input name="breathing${x}" id="breathing${x}" style="text-align:center;"  type="text" class="txt25px"/></td>
+        <td ><input name="pressure${x}" id="pressure${x}" style="text-align:right;"  type="text"  class="txt20px"/>/<input name="pressure${x}_1"  id="pressure${x}_1" type="text" class="txt20px"/></td>
+        <td><input name="heartrate${x}" id="heartrate${x}" type="text" style="text-align:center;"   class="txt40px"/></td>
+        <td><input name="pupil${x}" id="pupil${x}" type="text" style="text-align:right;" class="txt20px"/>/<input name="pupil${x}_1" id="pupil${x}_1" type="text" class="txt20px"/></td>
+        <td><input name="lightreflect${x}" id="lightreflect${x}" type="text" class="txt10px"/></td>
+        <td><input name="xybhd${x}" id="xybhd${x}" type="text" style="text-align:center;"  class="txt40px"/></td>
+		<td><input name="inmeter${x}" id="inmeter${x}" type="text" class="txt15px"/></td>
+        <td><input name="inmetername${x}" id="inmetername${x}" type="text" style="text-align:center;"  class="txt40px"/></td>
+        <td><input name="outmeter${x}" id="outmeter${x}" type="text" class="txt10px"/></td>
+        <td><input name="outmetername${x}" id="outmetername${x}" type="text" style="text-align:center;"  class="txt40px"/></td>
+        <td><input name="outmetercharacters${x}" id="outmetercharacters${x}" style="text-align:center;"  type="text" class="txt30px"/></td>
+        <td><input name="braden${x}" id="braden${x}" type="text" style="text-align:center;"  class="txt20px"/></td>
+        <td><input name="zcddpf${x}" id="zcddpf${x}" type="text" style="text-align:center;"  class="txt20px"/></td>
+        <td><input name="basedcare${x}" id="basedcare${x}" type="text" class="txt10px"/></td>
+        <td><input name="record${x}" id="record${x}" type="text"   class="txt190px"/></td>
+        <td><input name="signname${x}" id="signname${x}" type="text" style="text-align:center;"  class="txt40px"/></td>
+      </tr>
+</#list> 
+
+    </table>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+      <tr>
+      <td colspan="2">备注：</td>
+      </tr>
+      <tr>
+        <td width="28%">入量代号：鼻饲&#9651;&emsp;静注&#8744;&emsp;口服&#9675;</td>
+        <td width="30%">出量代号：引流管1&emsp;尿量2&emsp;胃肠减压3</td>
+        <td width="45%">意识：清楚&#8730;&ensp;嗜睡﹢&ensp;模糊﹢﹢&ensp;浅昏睡﹢﹢﹢&ensp;深昏睡﹢﹢﹢﹢ </td>
+      </tr>
+      <tr>
+        <td colspan="1">对光反应：灵敏&#8593;&emsp;迟钝&#8595;&emsp;消失&#9675;</td>
+		<td colspan="2">基础护理：口护A&emsp;皮护B&emsp;管道护理C&emsp;翻身D&emsp;肺部叩打E&emsp;背部护理F&emsp;肢体活动G&emsp;会阴护理H&emsp; </td>
+      </tr>
+    </table>
+<script>
+$(function(){
+<@x_inputtext field="dept" defaultValue="patient.deptname" />
+<@x_inputtext field="bedno" defaultValue="patient.cbedno" />
+<@x_inputtext field="name" defaultValue="patient.patname" />
+<@x_inputtext field="BZBAH" defaultValue="patient.inpno"/>
+<@x_inputtext field="diagname" defaultValue="patient.diagname" />
+<@x_inputtext field="ye"/>
+<@x_inputtext field="num" defaultValue="1" />
+<@x_inputtext field="diagnosis_admissionMain" defaultValue="diagnosis.admissionMain"/>
+<@x_inputtext field="out_date" defaultValue="patient.out_date" rule="yyyy-MM-dd HH:mm"/>
+<@x_inputtext field="diagnosis_outMain" defaultValue="diagnosis.outMain"/>
+<@x_inputtext field="admissdays" defaultValue="patient.admissdays"/>
+<@x_divedit field="admissions"/>
+<@x_divedit field="treatment"/>
+<@x_divedit field="outsituation"/>
+<@x_divedit field="outadvice"/>
+<@x_inputtext field="signDoctor"/>
+<@x_inputtext field="signyear" defaultValue="nowtime" rule="yyyy"/> 
+<@x_inputtext field="signmonth" defaultValue="nowtime" rule="MM"/> 
+<@x_inputtext field="signday" defaultValue="nowtime" rule="dd"/> 
+
+<#list 1..11 as x>
+<@x_inputtext field="date${x}"/>
+<@x_inputtext field="time${x}"/>
+<@x_combo field="awareness${x}"  rule="√,+,++,+++,++++" />
+<@x_inputtext field="temperature${x}"/>
+<@x_inputtext field="pulse${x}"/>
+<@x_inputtext field="breathing${x}"/>
+<@x_inputtext field="pressure${x}"/>
+<@x_inputtext field="pressure${x}_1"/>
+<@x_inputtext field="heartrate${x}"/>
+<@x_inputtext field="pupil${x}"/>
+<@x_inputtext field="pupil${x}_1"/>
+<@x_combo field="lightreflect${x}" rule="↑,↓,○"/>
+<@x_inputtext field="xybhd${x}"/>
+<@x_inputtext field="inmetername${x}" />
+<@x_inputtext field="outmetername${x}" />
+<@x_combo field="inmeter${x}" rule="△,∨,○"/>
+<@x_combo field="outmeter${x}" rule="1,2,3"/>
+<@x_inputtext field="outmetercharacters${x}"/>
+<@x_inputtext field="braden${x}"/>
+<@x_inputtext field="zcddpf${x}"/>
+<@x_combo field="basedcare${x}" rule="A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q"/>
+<@x_inputtext field="record${x}"/>
+<@x_inputtext field="signname${x}"/>
+</#list>
+
+
+});
+</script>

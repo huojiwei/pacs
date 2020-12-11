@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>精神科入院记录</title>
+</head>
+
+<body>
+
+	<div class="box2">${BZZYJGMC}</div>
+	<div class="box11">精神科入院记录</div>
+
+	<table width="650" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td>姓&emsp;&emsp;名：</td>
+			<td><input name="patname" id="patname" type="text" /></td>
+			<td>出&ensp;生&ensp;地：</td>
+			<td><input name="birthplace" id="birthplace" type="text"></td>
+		</tr>
+		<tr>
+			<td>性&emsp;&emsp;别：</td>
+			<td><input name="sex" id="sex" type="text" /></td>
+			<td>民&emsp;&emsp;族：</td>
+			<td><input name="national" id="national" type="text" /></td>
+		</tr>
+		<tr>
+			<td>年&emsp;&emsp;龄：</td>
+			<td><input name="calculateage" id="calculateage" type="text" /></td>
+			<td>职&emsp;&emsp;业：</td>
+			<td><input name="professional" id="professional" type="text" class="txt1" /></td>
+		</tr>
+		<tr>
+			<td>婚姻：</td>
+			<td><input name="maritalstatus" id="maritalstatus" type="text" /></td>
+			<td>住&emsp;&emsp;址：</td>
+			<td><input name="place" id="place" type="text" /></td>
+		</tr>
+		<tr>
+			<td>联系电话：</td>
+			<td><input name="phonecall" id="phonecall" type="text" /></td>
+			<td>电子邮件：</td>
+			<td><input name="email" id="email" type="text" /></td>
+		</tr>
+
+		<tr>
+			<td>入院时间：</td>
+			<td><input name="admiss_date" id="admiss_date" type="text" /></td>
+			<td>记录时间：</td>
+			<td> <input name="inputTime" id="inputTime" type="text" /></td>
+		</tr>
+		<tr>
+			<td valign="top">病史陈述者：</td>
+			<td><input name="historyPetitioner" id="historyPetitioner" type="text" /></td>
+			<td valign="top">入院方式：</td>
+			<td><input name="inhost" id="inhost" type="text" /></td>
+		</tr>
+	</table>
+
+	<!-- 病史 -->
+	<table width="650">
+		<tr>
+			<td valign="top">主&emsp;&emsp;诉</td>
+			<td>
+				<div name="chiefComplaint" id="chiefComplaint" style="width:560px;text-align:left;"></div>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top">现&ensp;病&ensp;史</td>
+			<td>
+				<div name="presentIllnessHistory" id="presentIllnessHistory" style="width:560px;text-align:left;"></div>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top">既&ensp;往&ensp;史</td>
+		</tr>
+	</table>
+	<div style="width: 650px;">
+		健康状况<input name="BZYLFFFS" id="BZYLFFFS" type="text" style="width: 30px;" />，
+		疾病史<input name="BZYLFFFS1" id="BZYLFFFS1" type="text" style="width: 30px;" />，
+		预防接种史<input name="BZYLFFFS2" id="BZYLFFFS2" type="text" style="width: 30px;" />，
+		传染病史及接触史<input name="BZYLFFFS3" id="BZYLFFFS3" type="text" style="width: 30px;" />，
+		食物，药物过敏史<input name="BZYLFFFS4" id="BZYLFFFS4" type="text" style="width: 30px;" />
+		手术史<input name="BZYLFFFS5" id="BZYLFFFS5" type="text" style="width: 30px;" />，
+		外伤史<input name="BZYLFFFS6" id="BZYLFFFS6" type="text" style="width: 30px;" />
+		输血史<input name="BZYLFFFS7" id="BZYLFFFS7" type="text" style="width: 30px;" />，
+		时间：<input name="signyear2" id="signyear2" type="text" class="txt7" style="width: 30px;" />
+			年
+			<input name="signmonth2" id="signmonth2" type="text" class="txt15px" style="width: 30px;" />
+			月
+			<input name="signday2" id="signday2" type="text" class="txt15px" style="width: 30px;" />
+			日医院：<input name="hospital" id="hospital" type="text" style="width: 30px;" />输血成分：
+		个人史：母孕期情况<input name="BZYLFFFS8" id="BZYLFFFS8" type="text" style="width: 30px;" />，
+		出生时情况<input name="BZYLFFFS9" id="BZYLFFFS9" type="text" style="width: 30px;" />
+		生长发育期情况<input name="BZYLFFFS10" id="BZYLFFFS10" type="text" style="width: 30px;" />
+		入学年龄<input type="text" name="rxnl" id="rxnl" style="width: 120px;" style="width: 30px;"/>岁，
+		学历<input type="text" name="xl" id="xl" style="width: 120px;" style="width: 30px;" />
+		学习成绩情况<input name="BZYLFFFS11" id="BZYLFFFS11" type="text" style="width: 30px;" />
+		劳动工作情况<input name="BZYLFFFS12" id="BZYLFFFS12" type="text" style="width: 30px;" />
+		不良嗜好<input name="BZYLFFFS13" id="BZYLFFFS13" type="text" style="width: 30px;" />
+		毒物及疫水接触史<input name="BZYLFFFS14" id="BZYLFFFS14" type="text" style="width: 30px;" />
+		婚育史：未婚
+		月经史：<input type="text" name="yjs" id="yjs" style="width: 120px;" style="width: 30px;" >
+		病前个性：倾向性<input name="BZYLFFFS15" id="BZYLFFFS15" type="text" style="width: 30px;" /> ，
+		稳定性<input name="BZYLFFFS16" id="BZYLFFFS16" type="text" style="width: 30px;" />，
+		特殊人格<input name="BZYLFFFS17" id="BZYLFFFS17" type="text" style="width: 30px;" />
+		家族史：父母<input name="BZYLFFFS18" id="BZYLFFFS18" type="text" style="width: 70px;" />，
+		兄弟，姐妹<input name="BZYLFFFS19" id="BZYLFFFS19" type="text" style="width: 70px;" />，
+		（否认家族性遗传病史，家族史）
+	</div>
+	<div style="width: 650px;">
+		发育<input name="BZYLFFFS20" id="BZYLFFFS20" type="text" style="width: 30px;" />
+		营养<input name="BZYLFFFS21" id="BZYLFFFS21" type="text" style="width: 30px;" />
+		神智<input name="BZYLFFFS22" id="BZYLFFFS22" type="text" style="width: 30px;" />
+		体位<input name="BZYLFFFS23" id="BZYLFFFS23" type="text" style="width: 30px;" />
+		合作<input name="BZYLFFFS24" id="BZYLFFFS24" type="text" style="width: 30px;" />
+		皮肤黏膜<input name="BZYLFFFS25" id="BZYLFFFS25" type="text" style="width: 30px;" />
+		浅表淋巴结<input name="BZYLFFFS26" id="BZYLFFFS26" type="text" style="width: 30px;" />
+		头部：头颅<input name="BZYLFFFS27" id="BZYLFFFS27" type="text" style="width: 30px;" />
+		眼<input name="BZYLFFFS28" id="BZYLFFFS28" type="text" style="width: 30px;" />
+		耳<input name="BZYLFFFS29" id="BZYLFFFS29" type="text" style="width: 30px;" />
+		鼻<input name="BZYLFFFS30" id="BZYLFFFS30" type="text" style="width: 30px;" />
+		口咽<input name="BZYLFFFS31" id="BZYLFFFS31" type="text" style="width: 30px;" />
+		颈部：<input name="BZYLFFFS32" id="BZYLFFFS32" type="text" style="width: 30px;" />
+		气管<input name="BZYLFFFS33" id="BZYLFFFS33" type="text" style="width: 30px;" />
+		甲状腺<input name="BZYLFFFS34" id="BZYLFFFS34" type="text" style="width: 30px;" />
+		胸部：胸廓<input name="BZYLFFFS35" id="BZYLFFFS35" type="text" style="width: 30px;" />
+		肺叩音<input name="BZYLFFFS36" id="BZYLFFFS36" type="text" style="width: 30px;" />
+		呼吸音<input name="BZYLFFFS37" id="BZYLFFFS37" type="text" style="width: 30px;" />
+		心界<input name="BZYLFFFS38" id="BZYLFFFS38" type="text" style="width: 30px;" />
+		心率<input name="xinlv" id="xinlv" type="text" style="width: 30px;" />次/分
+		心音<input name="BZYLFFFS39" id="BZYLFFFS39" type="text" style="width: 30px;" />
+		节律<input name="BZYLFFFS40" id="BZYLFFFS40" type="text" style="width: 30px;" />
+		心脏杂音<input name="BZYLFFFS41" id="BZYLFFFS41" type="text" style="width: 30px;" />
+		腹部：外形<input name="BZYLFFFS42" id="BZYLFFFS42" type="text" style="width: 30px;" />
+		腹肌<input name="BZYLFFFS43" id="BZYLFFFS43" type="text" style="width: 30px;" />
+		腹部压痛<input name="BZYLFFFS44" id="BZYLFFFS44" type="text" style="width: 30px;" />
+		肝<input name="BZYLFFFS45" id="BZYLFFFS45" type="text" style="width: 50px;" />
+		脾<input name="BZYLFFFS46" id="BZYLFFFS46" type="text" style="width: 50px;" />
+		肾区叩击痛<input name="BZYLFFFS47" id="BZYLFFFS47" type="text" style="width: 30px;" />
+		肠鸣音<input name="BZYLFFFS48" id="BZYLFFFS48" type="text" style="width: 30px;" />
+		移动性浊音<input name="BZYLFFFS49" id="BZYLFFFS49" type="text" style="width: 30px;" />
+		肛门及外生殖器<input name="BZYLFFFS50" id="BZYLFFFS50" type="text" style="width: 30px;" />
+		脊柱四肢<input name="BZYLFFFS51" id="BZYLFFFS51" type="text" style="width: 30px;" />
+		神经系统<input name="BZYLFFFS52" id="BZYLFFFS52" type="text" style="width: 30px;" />
+		精神情况检查
+		一般表现：仪表<input name="BZYLFFFS53" id="BZYLFFFS53" type="text" style="width: 70px;" />，
+		举止<input name="BZYLFFFS54" id="BZYLFFFS54" type="text" style="width: 50px;" />，
+		交谈接触<input name="BZYLFFFS55" id="BZYLFFFS55" type="text" style="width: 50px;" />，
+		答问<input name="BZYLFFFS56" id="BZYLFFFS56" type="text" style="width: 50px;" />，
+		意识<input name="BZYLFFFS57" id="BZYLFFFS57" type="text" style="width: 30px;" />，
+		定向力：时间<input name="BZYLFFFS58" id="BZYLFFFS58" type="text" style="width: 30px;" />，
+		地点<input name="BZYLFFFS59" id="BZYLFFFS59" type="text" style="width: 30px;" />，
+		人物<input name="BZYLFFFS60" id="BZYLFFFS60" type="text" style="width: 30px;" />，
+		日常生活<input name="BZYLFFFS61" id="BZYLFFFS61" type="text" style="width: 70px;" />，
+		自知力<input name="BZYLFFFS62" id="BZYLFFFS62" type="text" style="width: 70px;" />
+		认识活动：错觉<input name="BZYLFFFS63" id="BZYLFFFS63" type="text" style="width: 30px;" /> ，
+		感知综合障碍<input name="BZYLFFFS64" id="BZYLFFFS64" type="text" style="width: 30px;" />，
+		幻觉<input name="BZYLFFFS65" id="BZYLFFFS65" type="text" style="width: 30px;" />，
+		幻听<input name="BZYLFFFS66" id="BZYLFFFS66" type="text" style="width: 60px;" />
+		性质：
+		举例：<div name="jl1" id="jl1" style="width:560px;text-align:left;"></div>
+		思维联想：<input name="BZYLFFFS67" id="BZYLFFFS67" type="text" />
+		思维逻辑：<input name="BZYLFFFS68" id="BZYLFFFS68" type="text" />
+		思维内容：<input name="BZYLFFFS69" id="BZYLFFFS69" type="text" />
+		举例：<div name="jl2" id="jl2" style="width:560px;text-align:left;"></div>
+		注 意 力：<input name="BZYLFFFS70" id="BZYLFFFS70" type="text" />
+		记忆力<input name="BZYLFFFS71" id="BZYLFFFS71" type="text" />
+		智 能：<input name="BZYLFFFS72" id="BZYLFFFS72" type="text" />，
+		理解、判断及常识<input name="BZYLFFFS73" id="BZYLFFFS73" type="text" />
+		计算能力<input name="BZYLFFFS74" id="BZYLFFFS74" type="text" />
+		情感活动：<input name="BZYLFFFS75" id="BZYLFFFS75" type="text" />
+		举例：<div name="jl3" id="jl3" style="width:560px;text-align:left;"> </div>
+		意志行为：意志行为<input name="BZYLFFFS76" id="BZYLFFFS76" type="text" />
+		本能活动<input name="BZYLFFFS77" id="BZYLFFFS77" type="text" />
+		行为<input name="BZYLFFFS78" id="BZYLFFFS78" type="text" />
+		举例：<div name="jl4" id="jl4" style="width:560px;text-align:left;"></div>
+	</div>
+	<!-- 体格检查 -->
+	<table width="650" border="0" cellspacing="0" cellpadding="0" class="mar1">
+		<tr>
+			<td colspan="5" valign="top" align="center">
+				<strong>辅&nbsp;&nbsp;&nbsp;&nbsp;助&nbsp;&nbsp;&nbsp;&nbsp;检&nbsp;&nbsp;&nbsp;&nbsp;查
+				</strong></td>
+		</tr>
+		<tr>
+			<td>
+				<input type="text" name="temperature" id="temperature" style="width: 120px;" />
+			</td>
+			<td>
+				<input type="text" name="pulse" id="pulse" style="width: 120px; " />
+			</td>
+			<td>
+				<input type="text" name="huxi" id="huxi" style="width: 120px; "/>
+			</td>
+			<td>
+				<input type="text" name="shousuo" id="shousuo" style="width: 120px; "/>
+			</td>
+			<td>
+				<input type="text" name="weight" id="weight" style="width: 120px; "/>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="5">
+				<div name="physicalCheck" id="physicalCheck" style="width:640px;text-align:left;"></div>
+			</td>
+		</tr>
+	</table>
+
+
+	<!-- 初步诊断 -->
+	<table width="650" border="0" cellspacing="0" cellpadding="0" class="mar1">
+		<tr>
+			<td width="55%">&nbsp;</td>
+			<td valign="top"><strong>初步诊断：
+				</strong></td>
+			<td>
+				<div name="chubuzhenduan" id="chubuzhenduan" style="width:180px;text-align:left;"></div>
+			</td>
+		</tr>
+	</table>
+
+	<!-- 医生签名 -->
+	<table width="650" height="60" border="0" cellspacing="0" cellpadding="0" class="mar1">
+		<tr>
+			<td width="400">&nbsp;</td>
+			<td width="250">医师签名：
+				<input name="signDoctor" id="signDoctor" type="text" class="ryju1" style="width:150px" /></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><input name="signyear" id="signyear" type="text" class="txt7" />
+				年
+				<input name="signmonth" id="signmonth" type="text" class="txt15px" />
+				月
+				<input name="signday" id="signday" type="text" class="txt15px" />
+				日</td>
+		</tr>
+	</table>
+
+	<script type="text/javascript">
+		$(function () {
+
+
+		});
+	</script>
+</body>
+
+</html>

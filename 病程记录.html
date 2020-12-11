@@ -1,0 +1,50 @@
+
+<div class="box2">${BZZYJGMC}</div>
+  <div class="box11">病程记录</div>
+	<div class="border1">
+    	<table width="650" border="0" cellspacing="0" cellpadding="0">
+          <tr align="center">
+            <td><Span>病区：</Span>
+              <input name="cwardname" id="cwardname" type="text" class="txt150px"/>
+            </td>
+            <td><Span>床号： </Span>
+              <input name="cbedno" id="cbedno" type="text" class="txt50px"/>
+           </td>
+            <td><span>住院号：</span>
+              <input name="BZBAH" id="BZBAH" type="text" class="txt100px"/></td>
+          </tr>
+        </table>
+  </div>
+
+   <table width="650" border="0" cellspacing="0" cellpadding="0" class="mar1">
+      <tr>
+        <td width="50%"><Span>记录时间：</Span>
+          <input name="admiss_date" id="admiss_date" type="text" class="txt200px" style="width:300px;"/></td>
+        <td>
+         &nbsp;</td>
+      </tr>  
+      <tr>
+        <td colspan="2">
+          <div style="width:650px;" name="chafangjilu" id="chafangjilu" type="text" class="txt1"></div>
+        </td>
+      </tr>
+    </table>
+<table width="650" height="60" border="0" cellspacing="0" cellpadding="0" class="mar1">
+      <tr>
+        <td width="470">&nbsp;</td>
+        <td width="180">医师签名：
+        <input name="signDoctor" id="signDoctor"  type="text" class="ryju1"/></td>
+      </tr>
+    </table>
+<script type="text/javascript">
+$(function(){
+<@x_inputtext field="cwardname" defaultValue="patient.cwardname"/>
+<@x_inputtext field="cbedno" defaultValue="patient.cbedno"/>
+<@x_inputtext field="BZBAH" defaultValue="patient.inpno"/>
+<@x_inputtext field="patname" defaultValue="patient.patname"/>
+<@x_inputtext field="sex" defaultValue="patient.sex"/>
+<@x_inputtext field="admiss_date"  rule="yyyy-MM-dd HH:mm"/>
+<@x_divedit  field="chafangjilu"/>
+<@x_inputtext field="signDoctor"/>
+});
+</script>

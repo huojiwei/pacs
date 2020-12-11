@@ -1,0 +1,74 @@
+
+<div class="box2">${BZZYJGMC}</div>
+<div class="box11">诊&nbsp;&nbsp;&nbsp;&nbsp;断&nbsp;&nbsp;&nbsp;&nbsp;证&nbsp;&nbsp;&nbsp;&nbsp;明&nbsp;&nbsp;&nbsp;&nbsp;书</div>
+ <table width="650" border="0" cellspacing="0" cellpadding="0" class="mar1">
+    <tr>
+      <td width="20%"><Span>姓名</Span>
+        <input name="patname" id="patname" type="text" class="txt1" style="width: 80px;"/></td>
+      <td width="20%">年龄</Span>
+        <input name="calculateage" id="calculateage" type="text" class="txt200px"style="width: 80px;" /></td> 
+        <td width="60%">住址</Span>
+        <input name="cadd" id="cadd" type="text" class="txt200px" style="width:318px"/></td>         
+    </tr>
+<tr>
+      <td width="20%"><Span>性别</Span>
+      <input name="sex" id="sex" type="text" class="txt1" style="width: 80px;"/></td>
+      <td width="20%"><Span>科别</Span>
+        <input name="cwardname" id="cwardname" type="text" class="txt200px" style="width: 80px;"/></td>  
+        <td width="60%"><Span>初诊时间</Span>
+          <input name="admiss_date" id="admiss_date" type="text" class="txt200px"style="width:258px"/></td>  
+    </tr>
+ 
+   <tr>
+      <td colspan="3"><Span>&nbsp;&nbsp;&nbsp;&nbsp;因</Span>
+        <input type="text" name="msg" id="msg" style="width:485px">
+        <span>天，在我院诊断</span>
+        <br>
+        <span>为</span>
+        <input type="text"name="msg2"id="msg2" style="width:170px"><span>。经用</span>
+        <input type="text" name="msg5" id="msg5" style="width:300px"><span>治疗，现病情</span>
+        <br>
+        <input type="text"name="msg3"id="msg3"style="width:210px"><span>建议</span>
+        <input type="text" name="msg4"id="msg4"style="width:380px">
+      </td>
+      </tr>
+</table>
+<table width="650" height="60" border="0" cellspacing="0" cellpadding="0" class="mar1">
+    <tr>
+      <td width="400">&nbsp;</td>
+      <td width="250">经治医生
+      <input name="signDoctor" id="signDoctor"  type="text" class="ryju1" style="width:150px" /></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><input name="signyear" id="signyear" type="text" class="txt7"/>
+        年
+        <input name="signmonth" id="signmonth" type="text" class="txt15px"/>
+        月
+        <input name="signday" id="signday" type="text" class="txt15px"/>
+        日
+        <input name="signhour" id="signhour" type="text" class="txt15px"/>
+        时</td>
+    </tr>
+  </table>
+<script type="text/javascript">
+$(function(){
+<@x_inputtext field="cwardname" defaultValue="patient.cwardname"/>
+<@x_inputtext field="patname" defaultValue="patient.patname"/>
+<@x_inputtext field="sex" defaultValue="patient.sex"/>
+<@x_inputtext field="cadd" defaultValue="patient.cadd"/>
+<@x_inputtext field="admiss_date" defaultValue="patient.admiss_date" rule="yyyy-MM-dd HH:mm"/>
+<@x_inputtext field="calculateage" defaultValue="patient.calculateage"/>
+<@x_inputtext field="msg"/>
+<@x_inputtext field="msg2"/>
+<@x_inputtext field="msg3"/>
+<@x_inputtext field="msg4"/>
+<@x_inputtext field="msg5"/>
+<@x_inputtext field="signDoctor"/>
+<@x_inputtext field="signyear" defaultValue="nowtime" rule="yyyy"/> 
+<@x_inputtext field="signmonth" defaultValue="nowtime" rule="MM"/> 
+<@x_inputtext field="signday" defaultValue="nowtime" rule="dd"/> 
+<@x_inputtext field="signhour" defaultValue="nowtime" rule="HH"/> 
+
+});
+</script>

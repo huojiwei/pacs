@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .txt10{width: 10px;}
+    .txt20{width: 20px;}
+    .txt30{width: 30px;}
+    .txt40{width: 40px;}
+    .txt50{width: 50px;}
+    .txt60{width: 60px;}
+    .txt70{width: 70px;}
+    .txt80{width: 80px;}
+    .txt90{width: 90px;}
+    .txt100{width: 100px;}
+    .txt110{width: 110px;}
+    .txt120{width: 120px;}
+    .txt130{width: 130px;}
+    .w96{
+        width: 96%;
+    }
+    p{
+      margin: 0;
+    }
+    input{
+      padding: 0;
+      border: 0;
+      text-align: center;
+    }
+    .mar4 td{
+        text-align: center;
+    }
+    .mar4{
+      border-right: 1px solid #000;
+      border-bottom: 1px solid #000;
+    }
+    .mar4 td{
+      border-top: 1px solid #000;
+      border-left: 1px solid #000;
+    }
+    .look{
+        width: 250px;
+        height: 150px;
+        position:absolute;
+        top: 0;
+        right: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="width:940px;  background-color:#fff;">
+    <!-- <div class="box2">${BZZYJGMC}</div> -->
+    <div class="box1">${BZZYJGMC}护理记录</div>
+    <table width="940" border="0" cellspacing="0" cellpadding="0" class="jshl01">
+      <tr>
+        <td>
+        姓名
+        <input type="text" name="patnam" id="patnam" class="txt110" style="text-align: center;"/>
+       科室
+          <input type="text" name="deptname" id="deptname" class="txt110" style="width:100px; text-align: center;" />
+          床号
+          <input type="text" name="cbedno" id="cbedno" class="txt110" style="text-align: center;" />
+         住院病历号
+          <input type="text" name="medrcdno" id="medrcdno" class="txt110" style="text-align: center;"/>
+         </td>
+      </tr>
+    </table>
+    <div  style="width:940px;  overflow: hidden;">
+    <table width="940"  cellspacing="0" cellpadding="0" class="jshl02 mar4 jshl05">
+      <tr>
+        <td rowspan="2">日期</td>
+        <td rowspan="2">时间</td>
+        <td rowspan="2">病情</td>
+        <td colspan="5">生命体征</td>
+        <td rowspan="2">神志</td>
+        <td rowspan="2">瞳孔</td>
+
+        <td colspan="2">入量(ML)</td>
+        <td colspan="3">出量(ML)</td>
+        <td colspan="2">监测项目</td>
+        <td colspan="2">其他</td>
+        <td rowspan="2">病情观察、护理措施及效果</td>
+        <td rowspan="2">签名</td>
+      </tr>
+      <tr>
+        <td>
+            <p>体温</p>
+          </td>
+          <td>
+            <p>脉搏</p>
+          </td>
+          <td>
+            <p>心率</p>
+          </td>
+          <td>
+            <p>呼吸</p>
+          </td>
+          <td>
+            <p>血压</p>
+        </td>
+        <td>项目</td>
+        <td >量</td>
+        <td >大便</td>
+        <td >小便</td>
+        <td></td>
+        <td>血氧饱和度</td>
+        <td>血糖</td>
+        <td>卧位</td>
+        <td>皮肤</td>
+      </tr>
+      <#list 1..16 as x>
+        <tr>
+          <td><input type="text" name="rq${x}" id="rq${x}" class="txt40 jshl05" /></td>
+          <td><input type="text" name="sj${x}" id="sj${x}" class="txt40 jshl05" /></td>
+          <td><input type="text" name="name01${x}" id="name01${x}" class="w96"></td>
+          <td><input type="text" name="name02${x}" id="name02${x}" class="w96"></td>
+          <td><input type="text" name="name03${x}" id="name03${x}" class="w96"></td>
+          <td><input type="text" name="name04${x}" id="name04${x}" class="w96"></td>
+          <td><input type="text" name="name05${x}" id="name05${x}" class="w96"></td>
+          <td><input type="text" name="name06${x}" id="name06${x}" class="w96"></td>
+          <td><input type="text" name="name07${x}" id="name07${x}" class="w96"></td>
+          <td><input type="text" name="name08${x}" id="name08${x}" class="w96"></td>
+          <td><input type="text" name="name09${x}" id="name09${x}" class="w96"></td>
+          <td><input type="text" name="name10${x}" id="name10${x}" class="w96"></td>
+          <td><input type="text" name="name11${x}" id="name11${x}" class="w96"></td>
+          <td><input type="text" name="name12${x}" id="name12${x}" class="w96"></td>
+          <td><input type="text" name="name13${x}" id="name13${x}" class="w96"></td>
+          <td><input type="text" name="name14${x}" id="name14${x}" class="w96"></td>
+          <td><input type="text" name="name15${x}" id="name15${x}" class="w96"></td>
+          <td><input type="text" name="name16${x}" id="name16${x}" class="w96"></td>
+          <td><input type="text" name="name17${x}" id="name17${x}" class="w96"></td>
+          <td><input type="text" name="name18${x}" id="name18${x}" class="w96"></td>
+          <td><input type="text" name="name19${x}" id="name19${x}" class="w96"></td>
+         
+        </tr>
+      </#list>
+    </table>
+  </div>
+    <div class="look">
+        注意：体温单位未°C,脉搏单位为"次/min",呼吸单位为"次/min",血压单位为"mmHg"
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(function () {
+    <@x_inputtext field="deptname" defaultValue="patient.deptname" />	
+    <@x_inputtext field="cbedno" defaultValue="patient.cbedno" />
+    <@x_inputtext field="patnam" defaultValue="patient.patname" />
+    <@x_inputtext field="medrcdno" defaultValue="patient.medrcdno" />
+    <@x_inputtext field="diagname" defaultValue="patient.diagname" />
+    <#list 1..16 as x >
+    <@x_inputtext field="rq${x}" rule="MM-dd" />
+    <@x_inputtext field="sj${x}" rule="HH:mm" />
+    <@x_inputtext field="name01${x}"  />
+    <@x_inputtext field="name02${x}"  />
+    <@x_inputtext field="name03${x}"  />
+    <@x_inputtext field="name04${x}"  />
+    <@x_inputtext field="name05${x}"  />
+    <@x_inputtext field="name06${x}"  />
+    <@x_inputtext field="name07${x}"  />
+    <@x_inputtext field="name08${x}"  />
+    <@x_inputtext field="name09${x}"  />
+    <@x_inputtext field="name10${x}"  />
+    <@x_inputtext field="name11${x}"  />
+    <@x_inputtext field="name12${x}"  />
+    <@x_inputtext field="name13${x}"  />
+    <@x_inputtext field="name14${x}"  />
+    <@x_inputtext field="name15${x}"  />
+    <@x_inputtext field="name16${x}"  />
+    <@x_inputtext field="name17${x}"  />
+    <@x_inputtext field="name18${x}"  />
+    <@x_inputtext field="name19${x}"  />
+        </#list>
+  
+    })
+  </script>
+
+</body>
+
+</html>

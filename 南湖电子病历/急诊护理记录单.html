@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .table1{
+            border-top: 1px solid #000;
+            border-left: 1px solid #000;
+            font-size:14px;
+        }
+        .table1 td{
+            border-right: 1px solid #000;
+            border-bottom: 1px solid #000;
+        }
+        .table1 input{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div style="height: 970px; width: 650px; overflow: hidden;">
+    <div class="box1">${BZZYJGMC}急诊护理记录单</div>
+    <table width="650px" border="0" cellspacing="0" cellpadding="1" class="jshl01">
+        <tr>
+            <td>
+                姓名
+                <input type="text" name="textfield3" id="textfield3" class="txt11" style="width:80px"/>
+                性别
+                <input type="text" name="textfield4" id="textfield4" class="txt11" style="width:20px"/>
+                年龄
+                <input type="text" name="textfield5" id="textfield5" class="txt11" style="width:30px"/>
+                住院号
+                <input type="text" name="textfield6" id="textfield6" class="txt11" style="width:50px"/>
+                诊断
+                <input type="text" name="textfield8" id="textfield8" class="txt11" style="width:150px"/>
+            </td>
+        </tr>
+    </table>
+    <table class="table1" width="650px"  border="0" cellspacing="0" cellpadding="1" class="jshl01">
+        <tr>
+            <td colspan="2"> <input type="text" name="year" id="year" style="width:50px;"> 年</td>
+            <td rowspan="2" style="width:30px;">体温℃</td>
+            <td rowspan="2" style="width:30px;">呼吸次/分</td>
+            <td rowspan="2" style="width:30px;">心率次/分</td>
+            <td rowspan="2" style="width:30px;">血压<span style="font-size: 12px;">mmHg</span></td>
+            <td rowspan="2" style="width:30px; ">SPO<br>2%</td>
+            <td rowspan="2" style="width:110px;">输入液体及药名</td>
+            <td rowspan="2" style="text-align: center;">病情观察与治疗</td>
+            <td rowspan="2" style="width: 50px;">签名</td>
+        </tr>
+        <tr>
+            <td style="width: 34px;">日期</td>
+            <td style="width: 34px;">时间</td>
+        </tr>
+        <#list 1..20 as x>
+        <tr>
+            <td><input type="text" name="riqi${x}" id="riqi${x}"></td>
+            <td><input type="text" name="time${x}" id="time${x}"></td>
+            <td><input type="text" name="tiwen${x}" id="tiwen${x}"></td>
+            <td><input type="text" name="huxi${x}" id="huxi${x}"></td>
+            <td><input type="text" name="xinlv${x}" id="xinlv${x}"></td>
+            <td><input type="text" name="xueya${x}" id="xueya${x}"></td>
+            <td><input type="text" name="spo${x}" id="spo${x}"></td>
+            <td><div contenteditable="true" name="yaoming${x}" id="yaoming${x}" class="textarea bljc" /></td>
+            <td><div contenteditable="true" name="bqgcyhl${x}" id="bqgcyhl${x}" class="textarea bljc" /></td>
+            <td><input type="text" name="name${x}" id="name${x}"></td>
+           
+        </tr>
+        </#list>
+    </table>
+</div>
+    <script type="text/javascript">
+        $(function(){
+        <@x_inputtext field="textfield3" defaultValue="patient.patname"/>
+        <@x_inputtext field="textfield4" defaultValue="patient.sex"/>
+        <@x_inputtext field="textfield5" defaultValue="patient.calculateage"/>
+        <@x_inputtext field="textfield6" defaultValue="patient.inpno"/>
+        <@x_inputtext field="textfield8" defaultValue="patient.diagname"/>
+        <@x_inputtext field="year" rule="yyyy" />
+        <#list 1..20 as x>
+        <@x_inputtext field="riqi${x}" rule="MM-dd"/>
+        <@x_inputtext field="time${x}" rule="HH:ss"/>
+        <@x_inputtext field="tiwen${x}" />
+        <@x_inputtext field="huxi${x}" />
+        <@x_inputtext field="xinlv${x}" />
+        <@x_inputtext field="xueya${x}" />
+        <@x_inputtext field="spo${x}" />
+        <@x_divedit field="yaoming${x}" />
+        <@x_divedit field="bqgcyhl${x}" />
+        <@x_inputtext field="name${x}" />
+    
+        </#list>
+        });
+    </script>
+</body>
+</html>

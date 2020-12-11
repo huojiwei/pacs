@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="emrmodel.css">
+</head>
+<body>
+<style>
+    .textarea {
+        min-height: 20px;
+        max-height: 300px;
+        outline: 0;
+        margin: 0 auto;
+        overflow-x: hidden;
+        overflow-y: auto;
+        word-break: break-all;
+        -webkit-user-modify: read-write-plaintext-only;
+    }
+    [contentEditable=true]:empty:not(:focus):before {
+        content: attr(data-text);
+    }
+    .txt5{
+        width: 50px;
+    }
+    td{
+        text-align: left;
+    }
+</style>
+
+<div class="box2">${BZZYJGMC}</div>
+<div class="box1">
+    <p>护理首次评估记录单 </p>
+</div>
+<table width="640px" border="0" cellspacing="0" cellpadding="1" class="jshl02  jshl05">
+    <tr>
+        <td>科别
+            <input type="text" name="textfield1" id="textfield1" class="txt11" style="width:90px"/>
+            床号
+            <input type="text" name="textfield2" id="textfield2" class="txt11" style="width:30px"/>
+            姓名
+            <input type="text" name="textfield3" id="textfield3" class="txt11" style="width:80px"/>
+            性别
+            <input type="text" name="textfield4" id="textfield4" class="txt11" style="width:20px"/>
+            年龄
+            <input type="text" name="textfield5" id="textfield5" class="txt11" style="width:30px"/>
+            住院号
+            <input type="text" name="textfield6" id="textfield6" class="txt11" style="width:50px"/>
+            <br>
+            入院日期
+            <input type="text" name="textfield7" id="textfield7" class="txt11" style="width:120px"/>
+            诊断
+            <input type="text" name="textfield8" id="textfield8" class="txt11" style="width:150px"/>
+        </td>
+    </tr>
+</table>
+<table  width="640px" style="table-layout: fixed" border="0" cellspacing="1" cellpadding="1" class="jshl02 mar4  jshl05">
+    <tr>
+        <td>文化程度:<input type="text"  name="textfield80" id="textfield80" style="width:90px"></td>
+        <td>职业:<input type="text"  name="textfield81" id="textfield81" style="width:90px"></td>
+        
+        <td colspan="2" style="text-align:left">入院方式:&nbsp;<br>
+            <input type="checkbox" name="textfield9" value="门诊" />
+            门诊
+            <input type="checkbox" name="textfield9" value="急诊"/>
+            急诊&nbsp;/
+            <input type="checkbox" name="textfield99" value="步行"  />
+            步行
+            <input type="checkbox" name="textfield99" value="轮椅" />
+            轮椅
+            <input type="checkbox" name="textfield99" value="平车"/>
+            平车
+        </td>
+    </tr>
+    <tr>
+        <td>宗教: <input type="text" name="zj" id="zj" style="width:90px"></td>
+        <td>民族: <input type="text" name="mz" id="mz" style="width:90px"></td>
+        <td colspan="2">手术史:&nbsp;
+            无
+            <input type="checkbox" name="shoushu" value="无" />
+            有
+            <input type="checkbox" name="shoushu" value="有"/>
+            
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4">皮肤情况:
+            <input type="checkbox" name="textfield14"  value="正常" />
+            正常
+            <input type="checkbox" name="textfield14"  value="正常" />
+            破损
+            <input type="checkbox" name="textfield14"  value="皮疹"/>
+            皮疹
+            <input type="checkbox" name="textfield14"  value="水肿"/>
+            水肿
+            <input type="checkbox" name="textfield14"  value="潮红"/>
+            潮红
+            <input type="checkbox" name="textfield14"  value="瘀点"/>
+            瘀点
+            <input type="checkbox" name="textfield14"  value="其他"/>
+            压疮
+            <div name="pifuqingkuang" contenteditable="true" id="pifuqingkuang"></div>
+        </td>
+        
+    </tr>
+    <tr>
+        <td colspan="2">Braden(压疮)&nbsp;评分: <input type="text" name="pingfen1" id="pingfen1" style="width:90px"> 分</td>
+        <td colspan="2">跌倒/坠床评分: <input type="text" name="pingfen2" id="pingfen2" style="width:90px"> 分</td>
+    </tr>
+    <tr>
+        <td colspan="4">过敏史及表现:
+            <div name="guominsibiaoxian" contenteditable="true" id="guominsibiaoxian"></div>
+        </td>
+        
+    </tr>
+    <tr>
+        <td colspan="2">吸烟:&nbsp;
+            不吸
+            <input type="checkbox" name="xiyan" value="不吸" />
+            吸
+            <input type="checkbox" name="xiyan" value="吸"/>
+            (每日 <input type="text" name="xiyan1" id="xiyan1" style="width:30px" > 支 )
+        </td>
+        <td colspan="2" >饮酒:&nbsp;
+            不饮
+            <input type="checkbox" name="yinjiu" value="不饮" />
+            偶饮
+            <input type="checkbox" name="yinjiu" value="偶饮"/>
+            大量
+            <input type="checkbox" name="yinjiu" value="大量"/>
+            (每日 <input type="text" name="yinjiu1" id="yinjiu1" style="width:30px"> 两 )
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4">既往史：
+            否认
+            <input type="checkbox" name="jiwangsi" value="否认"/>
+            糖尿病
+            <input type="checkbox" name="jiwangsi" value="糖尿病"/>
+            高血压
+            <input type="checkbox" name="jiwangsi" value="高血压"/>
+            &nbsp;&nbsp;
+            其它疾病：<input type="text" name="jiwangsi1" id="jiwangsi1">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            简要病史：
+            <div name="jianyaobingshi" contenteditable="true" id="jianyaobingshi"></div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">资料来源：&nbsp;
+            病人
+            <input type="checkbox" name="textfield34"  value="病人"/>
+            家属
+            <input type="checkbox" name="textfield34"  value="家属"/>
+            其它
+            <input type="checkbox" name="textfield34"  value="其它"/>
+        </td>
+        <td colspan="2">
+            联系电话
+            <input type="text" name="textfield11" id="textfield11"  style="width:140px"/>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">VTE评分：<input type="text" name="vte" id="vte" style="width:30px">分</td>
+        <td colspan="2">ADL评分：<input type="text" name="adl" id="adl" style="width:30px">分</td>
+    </tr>
+    <tr>
+        <td colspan="4">入院POCT快速血糖：<input type="text" name="poct" id="poct" style="width:50px"> mmol/L</td>
+    </tr>
+    <tr>
+        <td colspan="2" >特殊情况说明：
+            <div name="tesuqingkuang" contenteditable="true" id="tesuqingkuang"></div>
+        </td>
+        <td colspan="2">
+            护士签名：
+            <input type="text" name="textfield23" id="textfield23" class="txt80px"/>
+            记录日期：
+            <input type="text" name="textfield24" id="textfield24" class="txt80px"/>
+        </td>
+    </tr>
+</table>
+
+<script type="text/javascript">
+    $(function(){
+    <@x_inputtext field="textfield1" defaultValue="patient.deptname"/>
+            <@x_inputtext field="textfield2" defaultValue="patient.cbedno"/>
+            <@x_inputtext field="textfield3" defaultValue="patient.patname"/>
+            <@x_inputtext field="textfield4" defaultValue="patient.sex"/>
+            <@x_inputtext field="textfield5" defaultValue="patient.calculateage"/>
+            <@x_inputtext field="textfield6" defaultValue="patient.inpno"/>
+            <@x_inputtext field="textfield7" defaultValue="patient.admiss_date" rule="yyyy-MM-dd HH:mm"/>
+            <@x_inputtext field="textfield8" defaultValue="patient.diagname"/>
+
+            <@x_checkbox field="textfield9" multiSelect="false"/>
+            <@x_checkbox field="textfield99" multiSelect="false"/>
+            
+            <@x_inputtext field="textfield11" defaultValue="patient.phonecall"/>
+            
+          
+            <@x_checkbox field="textfield14" multiSelect="false"/>
+            <@x_checkbox field="textfield34" multiSelect="false"/>
+
+            
+            <@x_divedit field="jianyaobingshi"/>
+            <@x_divedit field="pifuqingkuang"/>
+            <@x_divedit field="guominsibiaoxian"/>
+            <@x_divedit field="tesuqingkuang"/>
+
+            <@x_inputtext field="textfield23"/>
+            <@x_inputtext field="textfield24" defaultValue="nowtime" rule="yyyy-MM-dd"/>
+
+            <@x_inputtext field="textfield80" defaultValue="patient.culturaldegree"/>
+            <@x_inputtext field="textfield81" defaultValue="patient.professional"/>
+            <@x_inputtext field="zj"/>
+            <@x_inputtext field="mz"defaultValue="patient.national"/>
+            <@x_checkbox field="shoushu" multiSelect="false"/>
+            <@x_checkbox field="xiyan" multiSelect="false"/>
+            <@x_checkbox field="yinjiu" multiSelect="false"/>
+            <@x_checkbox field="jiwangsi" multiSelect="false"/>
+            <@x_inputtext field="pingfen1"/>
+            <@x_inputtext field="pingfen2"/>
+            <@x_inputtext field="xiyan1"/>
+            <@x_inputtext field="yinjiu1"/>
+            <@x_inputtext field="jiwangsi"/>
+            <@x_inputtext field="vte"/>
+            <@x_inputtext field="adl"/>
+            <@x_inputtext field="poct"/>
+
+
+    });
+</script>
+</body>
+</html>

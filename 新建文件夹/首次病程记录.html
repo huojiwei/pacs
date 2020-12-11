@@ -1,0 +1,54 @@
+<div class="box2">${BZZYJGMC}</div>
+<div class="box11">精神科首次病程记录</div>
+	<div class="border1">
+	  	<table width="650" border="0" cellspacing="0" cellpadding="0">
+	        <tr>
+	          <td>&nbsp;</td>
+	          <td><input name="signyear" id="signyear" type="text" class="txt7"/>
+	            年
+	            <input name="signmonth" id="signmonth" type="text" class="txt15px"/>
+	            月
+	            <input name="signday" id="signday" type="text" class="txt15px"/>
+	            日</td>
+			
+	        </tr>
+			
+	      </table>
+	</div>
+	<table width="650">
+	  <tr>
+	    <td valign="top">病例特点</td>
+	    <td><div name="BLTD" id="BLTD" style="width:560px;text-align:left;"></div></td>
+	  </tr> 
+	  <tr>
+	    <td valign="top">拟诊讨论</td>
+	    <td><div name="NZTL" id="NZTL" style="width:560px;text-align:left;"></div></td>
+	  </tr> 
+	  <tr>
+	    <td valign="top">病例分型</td>
+	    <td><div name="BLFX" id="BLFX" style="width:560px;text-align:left;"></div></td>
+	  </tr> 
+	  <tr>
+	    <td valign="top">诊疗计划</td>
+	    <td><div name="ZLJH" id="ZLJH" style="width:560px;text-align:left;"></div></td>
+	</table>
+	<table width="650" height="60" border="0" cellspacing="0" cellpadding="0" class="mar1">
+		<tr>
+		  <td width="400">&nbsp;</td>
+		  <td width="250">医师签名：
+		  <input name="doctorname" id="doctorname"  type="text" class="ryju1" style="width:150px" /></td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+	$(function(){
+	<@x_divedit field="BLTD"/>
+	<@x_divedit field="NZTL"/>
+	<@x_divedit  field="BLFX"/>
+	<@x_divedit  field="ZLJH"/>
+	<@x_divedit field="chiefComplaint"/>
+	<@x_inputtext field="doctorname"/>
+	<@x_inputtext field="signyear" defaultValue="nowtime" rule="yyyy"/> 
+	<@x_inputtext field="signmonth" defaultValue="nowtime" rule="MM"/> 
+	<@x_inputtext field="signday" defaultValue="nowtime" rule="dd"/> 
+	});
+	</script>

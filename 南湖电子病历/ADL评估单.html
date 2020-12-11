@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            margin: 0;
+            padding: 0;
+        }
+        .table02{
+            border-right: 1px solid #000;
+            border-bottom: 1px solid #000;
+        }
+        .table02 td{
+            border-top: 1px solid #000;
+            border-left: 1px solid #000;
+            line-height: 18px;
+        }
+        input{
+            width: 97%;
+            text-align: center;
+            border: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">嘉兴市南湖区中心医院患者转科交接记录单</div>
+    <table width="650" border="0" cellspacing="0" cellpadding="0" class="jshl01">
+        <tr>
+            <td>
+                病区:
+                <input type="text" name="cwardname" id="cwardname" style="width: 70px;">
+            </td>
+            <td>
+                床号
+                <input type="text" name="cbedno" id="cbedno" style="width: 50px;">
+            </td>
+            <td>
+                姓名
+                <input type="text" name="patname" id="patname" style="width: 100px;" />
+            </td>
+            <td>
+                性别
+                <input type="text" name="sex" id="sex" style="width: 50px;">
+            </td>
+            <td>
+                年龄
+                <input type="text" name="calculateage" id="calculateage" style="width: 50px;">
+            </td>
+            <td>
+                住院号
+                <input type="text" name="inpno" id="inpno" class="txt11" style="width: 100px;" />
+            </td>
+        </tr>
+    </table>
+    <table width="650"  cellspacing="0" cellpadding="0" class="jshl01 table02">
+        <tr>
+            <td rowspan="2" style="width: 20px;">评估项目</td>
+            <td rowspan="2" style="width: 8px;">分值</td>
+            <td rowspan="2" style="width: 200px; text-align: center;">评估内容</td>
+            <td colspan="6" style="width: 150px; text-align: center;">评估时间</td>
+        </tr>
+        <tr>
+            <td style="width: 15px;"><input type="text" id="riqi01" name="riqi01" ></td>
+            <td style="width: 15px;"><input type="text" id="riqi02" name="riqi02" ></td>
+            <td style="width: 15px;"><input type="text" id="riqi03" name="riqi03" ></td>
+            <td style="width: 15px;"><input type="text" id="riqi04" name="riqi04" ></td>
+            <td style="width: 15px;"><input type="text" id="riqi05" name="riqi05" ></td>
+            <td style="width: 15px;"><input type="text" id="riqi06" name="riqi06" ></td>
+        </tr>
+        <tr>
+            <td>进食</td>
+            <td>10 <br> 5 <br> 0</td>
+            <td>自已在合理时间的0秒种吃-D)可用关子突取眼前的食物需要辅具(例如绑在手腕上的支具) 需别人帮忙穿脱辅具或只会用汤匙进食。
+                无法自行取食或耗费时间过长。</td>
+            <td><input type="text" id="txt01" name="txt01" ></td>
+            <td><input type="text" id="txt02" name="txt02" ></td>
+            <td><input type="text" id="txt03" name="txt03" ></td>
+            <td><input type="text" id="txt04" name="txt04" ></td>
+            <td><input type="text" id="txt05" name="txt05" ></td>
+            <td><input type="text" id="txt06" name="txt06" ></td>
+        </tr>
+        <tr>
+            <td>个人卫生</td>
+            <td>5 <br> 0</td>
+            <td>可以自行洗手、刷牙、洗脸及梳头。
+                需要他人部分或完全协助。</td>
+            <td><input type="text" id="txt11" name="txt11" ></td>
+            <td><input type="text" id="txt12" name="txt12" ></td>
+            <td><input type="text" id="txt13" name="txt13" ></td>
+            <td><input type="text" id="txt14" name="txt14" ></td>
+            <td><input type="text" id="txt15" name="txt15" ></td>
+            <td><input type="text" id="txt16" name="txt16" ></td>
+        </tr>
+        <tr>
+            <td>上厕所</td>
+            <td>10 <br> 5 <br> 0</td>
+            <td>可自行上下马桶、穿脱衣服、会自行使用卫生纸擦拭。
+                需要协助保持姿势的平衡、整理衣服或用卫生纸。
+                无法自己完成。</td>
+            <td><input type="text" id="txt21" name="txt21" ></td>
+            <td><input type="text" id="txt22" name="txt22" ></td>
+            <td><input type="text" id="txt23" name="txt23" ></td>
+            <td><input type="text" id="txt24" name="txt24" ></td>
+            <td><input type="text" id="txt25" name="txt25" ></td>
+            <td><input type="text" id="txt26" name="txt26" ></td>
+        </tr>
+        <tr>
+            <td>洗澡</td>
+            <td>5 <br> 0</td>
+            <td>能独立完成(不论是盆浴或沐浴),不能别人在旁。
+                需别人协助。</td>
+            <td><input type="text" id="txt31" name="txt31" ></td>
+            <td><input type="text" id="txt32" name="txt32" ></td>
+            <td><input type="text" id="txt33" name="txt33" ></td>
+            <td><input type="text" id="txt34" name="txt34" ></td>
+            <td><input type="text" id="txt35" name="txt35" ></td>
+            <td><input type="text" id="txt36" name="txt36" ></td>
+        </tr>
+        <tr>
+            <td>穿脱衣服</td>
+            <td>10 <br> 5 <br> 0</td>
+            <td>能自己穿脱衣服、鞋子,自己扣扣子、上拉链或绑鞋带。
+                在别人协助下,可自己完成一半以上的动作。
+                完全依赖。</td>
+            <td><input type="text" id="txt41" name="txt41" ></td>
+            <td><input type="text" id="txt42" name="txt42" ></td>
+            <td><input type="text" id="txt43" name="txt43" ></td>
+            <td><input type="text" id="txt44" name="txt44" ></td>
+            <td><input type="text" id="txt45" name="txt45" ></td>
+            <td><input type="text" id="txt46" name="txt46" ></td>
+        </tr>
+        <tr>
+            <td>大便控制</td>
+            <td>10 <br> 5 <br> 0</td>
+            <td>不失禁,能自行灌肠或使用肛塞剂。
+                偶尔失禁(每周不超过1次),需他人协助使用灌肠或肛塞剂。失禁,无法自己控制且需他人处理。</td>
+            <td><input type="text" id="txt51" name="txt51" ></td>
+            <td><input type="text" id="txt52" name="txt52" ></td>
+            <td><input type="text" id="txt53" name="txt53" ></td>
+            <td><input type="text" id="txt54" name="txt54" ></td>
+            <td><input type="text" id="txt55" name="txt55" ></td>
+            <td><input type="text" id="txt56" name="txt56" ></td>
+        </tr>
+        <tr>
+            <td>小便控制</td>
+            <td>10 <br> 5 <br> 0</td>
+            <td>不失禁,能自行灌肠或使用肛塞剂。
+                偶尔失禁(每周不超过1次),需他人协助使用灌肠或肛塞剂。失禁,无法自己控制且需他人处理。</td>
+            <td><input type="text" id="txt61" name="txt61" ></td>
+            <td><input type="text" id="txt62" name="txt62" ></td>
+            <td><input type="text" id="txt63" name="txt63" ></td>
+            <td><input type="text" id="txt64" name="txt64" ></td>
+            <td><input type="text" id="txt65" name="txt65" ></td>
+            <td><input type="text" id="txt66" name="txt66" ></td>
+        </tr>
+        <tr>
+            <td>平地行走</td>
+            <td>15 <br> 10 <br> 5 <br> 0</td>
+            <td>使用或不适用辅具(如助行器)皆可独立行走50米以上。需他人稍微扶持或☐头指导才能行走50米以上。
+                虽无法行走,但可以操作轮椅(包括转弯、进门及接近桌子床沿)并可推行轮椅50米以上。
+                无法自行行走,需别人帮忙推轮椅。</td>
+            <td><input type="text" id="txt71" name="txt71" ></td>
+            <td><input type="text" id="txt72" name="txt72" ></td>
+            <td><input type="text" id="txt73" name="txt73" ></td>
+            <td><input type="text" id="txt74" name="txt74" ></td>
+            <td><input type="text" id="txt75" name="txt75" ></td>
+            <td><input type="text" id="txt76" name="txt76" ></td>
+        </tr>
+        <tr>
+            <td>上下楼梯</td>
+            <td>10 <br> 5 <br> 0</td>
+            <td>可自行上下楼梯,可使用扶手、扔杖等辅具
+                需他人协助才能上下楼梯。
+                无法上下楼梯。</td>
+            <td><input type="text" id="txt81" name="txt81" ></td>
+            <td><input type="text" id="txt82" name="txt82" ></td>
+            <td><input type="text" id="txt83" name="txt83" ></td>
+            <td><input type="text" id="txt84" name="txt84" ></td>
+            <td><input type="text" id="txt85" name="txt85" ></td>
+            <td><input type="text" id="txt86" name="txt86" ></td>
+        </tr>
+        <tr>
+            <td>上下床或椅子</td>
+            <td> 15 <br> 10 <br> 5 <br> 0</td>
+            <td>整个过程可独立完成。 办时
+                移动身体时需要稍微协助、给予提醒、安全监督,可以自行坐起, 但从床上坐起或移动身体时需他人协助.不能自己移动,完全依赖。</td>
+            <td><input type="text" id="txt91" name="txt91" ></td>
+            <td><input type="text" id="txt92" name="txt92" ></td>
+            <td><input type="text" id="txt93" name="txt93" ></td>
+            <td><input type="text" id="txt94" name="txt94" ></td>
+            <td><input type="text" id="txt95" name="txt95" ></td>
+            <td><input type="text" id="txt96" name="txt96" ></td>
+        </tr>
+        <tr>
+            <td>得分</td>
+            <td></td>
+            <td></td>
+            <td><input type="text" name="sum01" id="sum01"></td>
+            <td><input type="text" name="sum02" id="sum02"></td>
+            <td><input type="text" name="sum03" id="sum03"></td>
+            <td><input type="text" name="sum04" id="sum04"></td>
+            <td><input type="text" name="sum05" id="sum05"></td>
+            <td><input type="text" name="sum06" id="sum06"></td>
+        </tr>
+        <tr>
+            <td colspan="3">评估人</td>
+            <td><input type="text" name="name01" id="name01"></td>
+            <td><input type="text" name="name02" id="name02"></td>
+            <td><input type="text" name="name03" id="name03"></td>
+            <td><input type="text" name="name04" id="name04"></td>
+            <td><input type="text" name="name05" id="name05"></td>
+            <td><input type="text" name="name06" id="name06"></td>
+        </tr>
+    </table>
+    <div>
+        <p>评估要求：①入院(转科)当班;②自理能力发生变化时(病情发生安化服手术后等)；③常规每周评估一次。评估分值记录在护理记录单上，评分 < 60分者填写该评估记录单,并存档。</p>
+        <p>评估分值：0~40分为重度依赖,全部生活需要他人照顾；41~1-60分为中度依赖,大部分生活需要帮助；61-99分轻度依赖,少部分生活需要帮助；生活基本自理。</p>
+    </div>
+    <script type="text/javascript">
+        $(function(){
+            <@x_inputtext field = "patname" defaultValue="patient.patname" />
+			<@x_inputtext field = "cbedno" defaultValue="patient.cbedno" />
+			<@x_inputtext field = "sex" defaultValue="patient.sex" />
+			<@x_inputtext field = "calculateage" defaultValue="patient.calculateage" />
+			<@x_inputtext field = "inpno" defaultValue="patient.inpno" />
+            <@x_inputtext field="cwardname" defaultValue="patient.cwardname"/>
+            <@x_inputtext field="riqi01" rule="MM-dd"  />
+			<@x_inputtext field="riqi02" rule="MM-dd"/>
+			<@x_inputtext field="riqi03" rule="MM-dd"/>
+			<@x_inputtext field="riqi04" rule="MM-dd"/>
+			<@x_inputtext field="riqi05" rule="MM-dd"/>
+			<@x_inputtext field="riqi06" rule="MM-dd"/>
+			<@x_inputtext field="riqi07" rule="MM-dd"/>
+            <@x_combo field="txt01" rule="10,5,0" />
+            <@x_combo field="txt02" rule="10,5,0" />
+            <@x_combo field="txt03" rule="10,5,0" />
+            <@x_combo field="txt04" rule="10,5,0" />
+            <@x_combo field="txt05" rule="10,5,0" />
+            <@x_combo field="txt06" rule="10,5,0" />
+            <@x_combo field="txt11" rule="5,0" />
+            <@x_combo field="txt12" rule="5,0" />
+            <@x_combo field="txt13" rule="5,0" />
+            <@x_combo field="txt14" rule="5,0" />
+            <@x_combo field="txt15" rule="5,0" />
+            <@x_combo field="txt16" rule="5,0" />
+            <@x_combo field="txt21" rule="10,5,0" />
+            <@x_combo field="txt22" rule="10,5,0" />
+            <@x_combo field="txt23" rule="10,5,0" />
+            <@x_combo field="txt24" rule="10,5,0" />
+            <@x_combo field="txt25" rule="10,5,0" />
+            <@x_combo field="txt26" rule="10,5,0" />
+            <@x_combo field="txt31" rule="5,0" />
+            <@x_combo field="txt32" rule="5,0" />
+            <@x_combo field="txt33" rule="5,0" />
+            <@x_combo field="txt34" rule="5,0" />
+            <@x_combo field="txt35" rule="5,0" />
+            <@x_combo field="txt36" rule="5,0" />
+            <@x_combo field="txt41" rule="10,5,0" />
+            <@x_combo field="txt42" rule="10,5,0" />
+            <@x_combo field="txt43" rule="10,5,0" />
+            <@x_combo field="txt44" rule="10,5,0" />
+            <@x_combo field="txt45" rule="10,5,0" />
+            <@x_combo field="txt46" rule="10,5,0" />
+            <@x_combo field="txt51" rule="10,5,0" />
+            <@x_combo field="txt52" rule="10,5,0" />
+            <@x_combo field="txt53" rule="10,5,0" />
+            <@x_combo field="txt54" rule="10,5,0" />
+            <@x_combo field="txt55" rule="10,5,0" />
+            <@x_combo field="txt56" rule="10,5,0" />
+            <@x_combo field="txt61" rule="10,5,0" />
+            <@x_combo field="txt62" rule="10,5,0" />
+            <@x_combo field="txt63" rule="10,5,0" />
+            <@x_combo field="txt64" rule="10,5,0" />
+            <@x_combo field="txt65" rule="10,5,0" />
+            <@x_combo field="txt66" rule="10,5,0" />
+            <@x_combo field="txt71" rule="15,10,5,0" />
+            <@x_combo field="txt72" rule="15,10,5,0" />
+            <@x_combo field="txt73" rule="15,10,5,0" />
+            <@x_combo field="txt74" rule="15,10,5,0" />
+            <@x_combo field="txt75" rule="15,10,5,0" />
+            <@x_combo field="txt76" rule="15,10,5,0" />
+            <@x_combo field="txt81" rule="10,5,0" />
+            <@x_combo field="txt82" rule="10,5,0" />
+            <@x_combo field="txt83" rule="10,5,0" />
+            <@x_combo field="txt84" rule="10,5,0" />
+            <@x_combo field="txt85" rule="10,5,0" />
+            <@x_combo field="txt86" rule="10,5,0" />
+            <@x_combo field="txt91" rule="15,10,5,0" />
+            <@x_combo field="txt92" rule="15,10,5,0" />
+            <@x_combo field="txt93" rule="15,10,5,0" />
+            <@x_combo field="txt94" rule="15,10,5,0" />
+            <@x_combo field="txt95" rule="15,10,5,0" />
+            <@x_combo field="txt96" rule="15,10,5,0" />
+            <@x_inputtext field="sum01" />
+            <@x_inputtext field="sum02" />
+            <@x_inputtext field="sum03" />
+            <@x_inputtext field="sum04" />
+            <@x_inputtext field="sum05" />
+            <@x_inputtext field="sum06" />
+            <@x_inputtext field="name01" />
+            <@x_inputtext field="name02" />
+            <@x_inputtext field="name03" />
+            <@x_inputtext field="name04" />
+            <@x_inputtext field="name05" />
+            <@x_inputtext field="name06" />
+
+            setInterval(function(){
+    
+    var sum01 = Number(document.getElementById('txt01').value)+
+                Number(document.getElementById('txt11').value)+
+                Number(document.getElementById('txt21').value)+
+                Number(document.getElementById('txt31').value)+
+                Number(document.getElementById('txt41').value)+
+                Number(document.getElementById('txt51').value)+
+                Number(document.getElementById('txt61').value)+
+                Number(document.getElementById('txt71').value)+
+                Number(document.getElementById('txt81').value)+
+                Number(document.getElementById('txt91').value);
+    var sum02 = Number(document.getElementById('txt02').value)+
+                Number(document.getElementById('txt12').value)+
+                Number(document.getElementById('txt22').value)+
+                Number(document.getElementById('txt32').value)+
+                Number(document.getElementById('txt42').value)+
+                Number(document.getElementById('txt52').value)+
+                Number(document.getElementById('txt62').value)+
+                Number(document.getElementById('txt72').value)+
+                Number(document.getElementById('txt82').value)+
+                Number(document.getElementById('txt92').value);
+    var sum03 = Number(document.getElementById('txt03').value)+
+                Number(document.getElementById('txt13').value)+
+                Number(document.getElementById('txt23').value)+
+                Number(document.getElementById('txt33').value)+
+                Number(document.getElementById('txt43').value)+
+                Number(document.getElementById('txt53').value)+
+                Number(document.getElementById('txt63').value)+
+                Number(document.getElementById('txt73').value)+
+                Number(document.getElementById('txt83').value)+
+                Number(document.getElementById('txt93').value);
+    var sum04 = Number(document.getElementById('txt04').value)+
+                Number(document.getElementById('txt14').value)+
+                Number(document.getElementById('txt24').value)+
+                Number(document.getElementById('txt34').value)+
+                Number(document.getElementById('txt44').value)+
+                Number(document.getElementById('txt54').value)+
+                Number(document.getElementById('txt64').value)+
+                Number(document.getElementById('txt74').value)+
+                Number(document.getElementById('txt84').value)+
+                Number(document.getElementById('txt94').value);
+    var sum05 = Number(document.getElementById('txt05').value)+
+                Number(document.getElementById('txt15').value)+
+                Number(document.getElementById('txt25').value)+
+                Number(document.getElementById('txt35').value)+
+                Number(document.getElementById('txt45').value)+
+                Number(document.getElementById('txt55').value)+
+                Number(document.getElementById('txt65').value)+
+                Number(document.getElementById('txt75').value)+
+                Number(document.getElementById('txt85').value)+
+                Number(document.getElementById('txt95').value);
+    var sum06 = Number(document.getElementById('txt06').value)+
+                Number(document.getElementById('txt16').value)+
+                Number(document.getElementById('txt26').value)+
+                Number(document.getElementById('txt36').value)+
+                Number(document.getElementById('txt46').value)+
+                Number(document.getElementById('txt56').value)+
+                Number(document.getElementById('txt66').value)+
+                Number(document.getElementById('txt76').value)+
+                Number(document.getElementById('txt86').value)+
+                Number(document.getElementById('txt96').value);
+    
+    document.getElementById('sum01').value = sum01;
+    document.getElementById('sum02').value = sum02;
+    document.getElementById('sum03').value = sum03;
+    document.getElementById('sum04').value = sum04;
+    document.getElementById('sum05').value = sum05;
+    document.getElementById('sum06').value = sum06;
+}, 1000);
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<style type="text/css">
+		td{
+			height: 30px;
+		}
+		.pinggu{
+			border-right: 1px solid #000;
+			border-bottom: 1px solid #000;
+		}
+		.pinggu td{
+			border-top: 1px solid #000;
+			border-left: 1px solid #000;
+		}
+		input[type=text]{
+			width: 96%;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box1">嘉兴市南湖区中心医院患者转科交接记录单</div>
+		<table width="650" border="0" cellspacing="0" cellpadding="0" class="jshl01">
+			<tr>
+				<td>
+					床号
+					<input type="text" name="cbedno" id="cbedno" style="width: 70px;">
+				</td>
+				<td>
+					姓名
+					<input type="text" name="patname" id="patname" style="width: 100px;" />
+				</td>
+				<td>
+					性别
+					<input type="text" name="sex" id="sex" style="width: 50px;">
+				</td>
+				<td>
+					年龄
+					<input type="text" name="calculateage" id="calculateage" style="width: 50px;">
+				</td>
+				<td>
+					住院号
+					<input type="text" name="inpno" id="inpno" class="txt11" style="width: 100px;" />
+				</td>
+			</tr>
+		</table>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" style="line-height:18px;">
+			<tr>
+				<td colspan="2" style="font-weight: 700;">一、一般项目（请在 <input type="checkbox"name="yi" value="yi">内打勾）</td>
+			</tr>
+			<tr>
+				<td  colspan="2"> 1、静脉输液及通常情况</td>
+			</tr>
+			<tr>
+				<td style="width: 130px; " >输液通路：</td>
+				<td>
+					<input type="checkbox" name="shuye" value="外周静脉">外周静脉&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" name="shuye" value="深静脉">深静脉&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" name="shuye" value="PICC">PICC&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" name="shuye" value="其他">其他&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<td>有无异常： </td>
+				<td><input type="checkbox" name="yichang1" value="无">无</td>
+				
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type="checkbox" name="yichang1" value="有">有（ &nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" name="yichang01" value="渗漏">渗漏&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" name="yichang01" value="阻塞">阻塞&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" name="yichang01" value="脱出">脱出&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" name="yichang01" value="其他">其他&nbsp;&nbsp;&nbsp;&nbsp; ）
+				</td>
+			</tr>
+			<tr>
+				<td>2、特殊用药：</td>
+				<td>
+					<input type="checkbox" name="tesu" value="无">无&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" name="tesu" value="有">有&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="text" name="textfield1" id="textfield1" style="width: 200px; border:none;border-bottom:1px solid #000;">(请注明)
+				</td>
+			</tr>
+			<tr>
+				<td>3、引流管道：</td>
+				<td> 
+					<input type="checkbox" name="yinliu" value="无">无&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" name="yinliu" value="有">有&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="text" name="textfield2" id="textfield2" style="width: 200px; border:none;border-bottom:1px solid #000;">(请注明)
+				</td>
+			</tr>
+			
+			<tr>
+				<td>有无异常：</td>
+				<td><input type="checkbox" name="yichang2" value="无">无</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type="checkbox" name="yichang2" value="有">有（ &nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" name="yichang02" value="渗漏">渗漏&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" name="yichang02" value="阻塞">阻塞&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" name="yichang02" value="脱出">脱出&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" name="yichang02" value="其他">其他&nbsp;&nbsp;&nbsp;&nbsp;）
+				</td>
+			</tr>
+			<tr>
+				<td>4、高危跌倒：</td>
+				<td>
+					<input type="checkbox" name="diedao" value="是">是&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" name="diedao" value="否">否
+				</td>
+			</tr>
+			<tr>
+				<td>
+					5、高危压疮： 
+				</td>
+				<td>
+					<input type="checkbox" name="yachuang" value="是">是&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" name="yachuang" value="否">否
+				</td>
+			</tr>
+			<tr>
+				<td>6、皮肤情况： </td>
+				<td>
+					<input type="checkbox" name="pifu" value="完整">完整&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" name="pifu" value="压疮">压疮&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" name="pifu" value="烫伤">烫伤&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" name="pifu" value="切口">切口&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" name="pifu" value="其他">其他
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style=" font-weight: 700;">二、随身物品及身体评估</td>
+			</tr>
+		</table>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" style="line-height:18px;" class="pinggu">
+				
+				<tr>
+					<td class="tg-0pky" style="text-align: center;">项目</td>
+					<td class="tg-0pky" style="text-align: center;">转出科室</td>
+					<td class="tg-0pky" style="text-align: center;">转入科室</td>
+				</tr>
+			
+			
+				<tr>
+					<td class="tg-0pky">病例</td>
+					<td class="tg-0pky"><input type="text" name="txt01" id="txt01"></td>
+					<td class="tg-0pky"><input type="text" name="txt02" id="txt02"></td>
+				</tr>
+				<tr>
+					<td class="tg-0pky">X线片/CTMRI</td>
+					<td class="tg-0pky"><input type="text" name="txt03" id="txt03"></td>
+					<td class="tg-0pky"><input type="text" name="txt04" id="txt04"></td>
+				</tr>
+				<tr>
+					<td class="tg-0pky">带入液体（名称、量）</td>
+					<td class="tg-0pky"><input type="text" name="txt05" id="txt05"></td>
+					<td class="tg-0pky"><input type="text" name="txt06" id="txt06"></td>
+				</tr>
+				<tr>
+					<td class="tg-0pky">意识</td>
+					<td class="tg-0pky"><input type="text" name="txt07" id="txt07"></td>
+					<td class="tg-0pky"><input type="text" name="txt08" id="txt08"></td>
+				</tr>
+				<tr>
+					<td class="tg-0pky">血压mmHG</td>
+					<td class="tg-0pky"><input type="text" name="txt09" id="txt09"></td>
+					<td class="tg-0pky"><input type="text" name="txt10" id="txt10"></td>
+				</tr>
+				<tr>
+					<td class="tg-0pky">脉搏（次/分）</td>
+					<td class="tg-0pky"><input type="text" name="txt11" id="txt11"></td>
+					<td class="tg-0pky"><input type="text" name="txt12" id="txt12"></td>
+				</tr>
+				<tr>
+					<td class="tg-0pky">呼吸（次/分）</td>
+					<td class="tg-0pky"><input type="text" name="txt13" id="txt13"></td>
+					<td class="tg-0pky"><input type="text" name="txt14" id="txt14"></td>
+				</tr>
+				<tr>
+					<td class="tg-0lax">氧饱和度（%）</td>
+					<td class="tg-0lax"><input type="text" name="txt15" id="txt15"></td>
+					<td class="tg-0lax"><input type="text" name="txt16" id="txt16"></td>
+				</tr>
+				<tr>
+					<td class="tg-0lax">其他</td>
+					<td class="tg-0lax"><input type="text" name="txt17" id="txt17"></td>
+					<td class="tg-0lax"><input type="text" name="txt18" id="txt18"></td>
+				</tr>
+				<tr>
+					<td class="tg-0lax">签名</td>
+					<td class="tg-0lax"><input type="text" name="txt19" id="txt19"></td>
+					<td class="tg-0lax"><input type="text" name="txt20" id="txt20"></td>
+				</tr>
+			</tbody>
+		</table>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" style="line-height:18px;">
+			<tr>
+				
+				<td style="text-align: right;">日期：
+					<input type="text" name="year" id="year" style="width: 70px; text-align: center;">年
+					<input type="text" name="month" id="month"  style="width: 70px; text-align: center;">月
+					<input type="text" name="day" id="day"  style="width: 70px; text-align: center;">日
+					<input type="text" name="hh" id="hh"  style="width: 70px; text-align: center;">时
+				</td>
+			</tr>
+		</table>
+	<script type="text/javascript">
+		$(function () {
+			setTimeout(function(){
+				var myDate = new Date();
+				var year = myDate.getFullYear(); 
+				var month = myDate.getMonth()+1; 
+				var day = myDate.getDate();
+				var hh = myDate.getHours();
+    			document.getElementById('year').value = year;
+    			document.getElementById('month').value = month;
+    			document.getElementById('day').value = day;
+				document.getElementById('hh').value = hh;
+			},1000);
+
+			<@x_inputtext field = "patname" defaultValue="patient.patname" />
+			<@x_inputtext field = "cbedno" defaultValue="patient.cbedno" />
+			<@x_inputtext field = "sex" defaultValue="patient.sex" />
+			<@x_inputtext field = "calculateage" defaultValue="patient.calculateage" />
+			<@x_inputtext field = "medrcdno" defaultValue="patient.medrcdno" />
+			<@x_inputtext field = "year" rule="yyyy" />
+			<@x_inputtext field = "month" rule="MM"/>
+			<@x_inputtext field = "day" rule="dd" />
+			<@x_inputtext field = "hh" rule="HH" />
+			<@x_checkbox field = "shuye" multiSelect="false"/>
+			<@x_checkbox field = "yichang1" multiSelect="false"/>
+			<@x_checkbox field = "yichang01" multiSelect="false"/>
+			<@x_checkbox field = "tesu" multiSelect="false"/>
+			<@x_checkbox field = "yinliu" multiSelect="false"/>
+			<@x_checkbox field = "yichang2" multiSelect="false"/>
+			<@x_checkbox field = "yichang02" multiSelect="false"/>
+			<@x_checkbox field = "diedao" multiSelect="false"/>
+			<@x_checkbox field = "yachuang" multiSelect="false"/>
+			<@x_checkbox field = "pifu" multiSelect="false"/>
+			<@x_checkbox field = "yi" />
+			
+			<@x_inputtext field = "textfield1" />
+			<@x_inputtext field = "textfield2" />
+
+			<@x_inputtext field = "txt01" />
+			<@x_inputtext field = "txt02" />
+			<@x_inputtext field = "txt03" />
+			<@x_inputtext field = "txt04" />
+			<@x_inputtext field = "txt05" />
+			<@x_inputtext field = "txt06" />
+			<@x_inputtext field = "txt07" />
+			<@x_inputtext field = "txt08" />
+			<@x_inputtext field = "txt09" />
+			<@x_inputtext field = "txt10" />
+			<@x_inputtext field = "txt11" />
+			<@x_inputtext field = "txt12" />
+			<@x_inputtext field = "txt13" />
+			<@x_inputtext field = "txt14" />
+			<@x_inputtext field = "txt15" />
+			<@x_inputtext field = "txt16" />
+			<@x_inputtext field = "txt17" />
+			<@x_inputtext field = "txt18" />
+			<@x_inputtext field = "txt19" />
+			<@x_inputtext field = "txt20" />
+		
+			});
+	</script>
+</body>
+
+</html>
